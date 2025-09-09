@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Automate > Automation -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/DesignationCategoryDef[defName="Ferny_Automation"]/label</xpath>
+        <value>
+            <label>Automation</label>
+        </value>
+    </Operation>
+
+    <!-- Build > Structure -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/DesignationCategoryDef[defName="Structure"]/label</xpath>
+        <value>
+            <label>Structure</label>
+        </value>
+    </Operation>
+
+    <!-- Entertain > Entertainment -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/DesignationCategoryDef[defName="Ferny_Hosting"]/label</xpath>
+        <value>
+            <label>Entertainment</label>
+        </value>
+    </Operation>
+
+    <!-- Fight > Security -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/DesignationCategoryDef[defName="Security"]/label</xpath>
+        <value>
+            <label>Security</label>
+        </value>
+    </Operation>
+
+    <!-- Furnish > Furniture -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/DesignationCategoryDef[defName="Furniture"]/label</xpath>
+        <value>
+            <label>Furniture</label>
+        </value>
+    </Operation>
+
+    <!-- Manage > Management -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/DesignationCategoryDef[defName="Ferny_Colony"]/label</xpath>
+        <value>
+            <label>Management</label>
+        </value>
+    </Operation>
+
+    <!-- Make > Production -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/DesignationCategoryDef[defName="Production"]/label</xpath>
+        <value>
+            <label>Production</label>
+        </value>
+    </Operation>
+
+    <!-- Produce > Crafting -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/DesignationCategoryDef[defName="Ferny_Production"]/label</xpath>
+        <value>
+            <label>Crafting</label>
+        </value>
+    </Operation>
+
+    <!-- Process > Processing -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/DesignationCategoryDef[defName="Ferny_ProcessingProduction"]/label</xpath>
+        <value>
+            <label>Processing</label>
+        </value>
+    </Operation>
+
+    <!-- More (the subcategory) > Misc -->
+    <!-- <Operation Class="PatchOperationReplace">
+        <xpath>Defs/DesignationCategoryDef[defName=""]/label</xpath>
+        <value>
+            <label>Misc</label>
+        </value>
+    </Operation> -->
+
+    <!-- Store > Storage -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/DesignationCategoryDef[defName="Ferny_Storage"]/label</xpath>
+        <value>
+            <label>Storage</label>
+        </value>
+    </Operation>
+
+    <!-- Aerial > Air -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/DesignationCategoryDef[defName="Ferny_AerialTransport"]/label</xpath>
+        <value>
+            <label>Air</label>
+        </value>
+    </Operation>
+
+    <!-- Naval > Sea -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/DesignationCategoryDef[defName="Ferny_NavalTransport"]/label</xpath>
+        <value>
+            <label>Sea</label>
+        </value>
+    </Operation>
+
+</Patch>

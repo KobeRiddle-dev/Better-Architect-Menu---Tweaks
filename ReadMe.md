@@ -15,11 +15,13 @@ Also renames certain other categories to be more consistent and understandable.
 - Make > Production
     - Produce > Crafting
     - Process > Processing
-- More (no rename)
-    - More (the subcategory) > Misc
 - Store > Storage
 - Transport (no rename)
     - Aerial > Air
     - Naval > Sea
 
-I also want to rename Area to something else, but I can't figure it out yet. Please share suggestions in the comments!
+## Renames I'd like to make
+
+- More (no rename)
+    - More (the subcategory) > Misc. I'm not sure how to do this yet.
+- Area > something else. I can't figure it out yet. Please share suggestions in the comments!
