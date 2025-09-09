@@ -73,14 +73,6 @@
         </value>
     </Operation>
 
-    <!-- More (the subcategory) > Misc -->
-    <!-- <Operation Class="PatchOperationReplace">
-        <xpath>Defs/DesignationCategoryDef[defName=""]/label</xpath>
-        <value>
-            <label>Misc</label>
-        </value>
-    </Operation> -->
-
     <!-- Store > Storage -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/DesignationCategoryDef[defName="Ferny_Storage"]/label</xpath>

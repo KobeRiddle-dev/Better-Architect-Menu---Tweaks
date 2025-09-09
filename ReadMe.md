@@ -22,6 +22,4 @@ Also renames certain other categories to be more consistent and understandable.
 
 ## Renames I'd like to make
 
-- More (no rename)
-    - More (the subcategory) > Misc. I'm not sure how to do this yet.
 - Area > something else. I can't figure it out yet. Please share suggestions in the comments!
