@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Better Architect Menu | Rename Categories</name>
+	<author>Kobe Riddle</author>
+	<packageId>KobeRiddle.BetterArchitectMenu.RenameCategories</packageId>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>Ferny.BetterArchitect</packageId>
+			<displayName>Better Architect Menu</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3563882422</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<description>Renames all the verb category names so that all categories have nouns as their name.\n\nAlso renames certain other categories to be more consistent and understandable.
+	</description>
+	<loadAfter>
+
+		<!-- Ludeon -->
+		<li>Ludeon.Rimworld</li>
+		<li>Ludeon.Rimworld.Royalty</li>
+		<li>Ludeon.Rimworld.Ideology</li>
+		<li>Ludeon.Rimworld.Biotech</li>
+		<li>Ludeon.Rimworld.Anomaly</li>
+		<li>Ludeon.Rimworld.Odyssey</li>
+
+		<!-- Ferny -->
+		<li>Ferny.BetterArchitect</li>
+
+	</loadAfter>
+</ModMetaData>
