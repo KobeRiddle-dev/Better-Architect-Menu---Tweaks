@@ -2,11 +2,11 @@
 <Patch>
 
     <!-- Move Beds -->
-    <!-- <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[@Name="BasedSkyLight"]/designationCategory</xpath>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@ParentName="AnimalBedFurnitureBase" or defName="AnimalSleepingSpot"]/designationCategory</xpath>
         <value>
-            <designationCategory>Structure</designationCategory>
+            <designationCategory>Ferny_Ranching</designationCategory>
         </value>
-    </Operation> -->
+    </Operation>
 
 </Patch>
