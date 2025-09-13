@@ -1,0 +1,10 @@
+<loadFolders>
+    <v1.6>
+        <li>Mod Patches/Core</li>
+
+        <li IfModActive="Ludeon.Rimworld.Ideology">Mod Patches/Ludeon/Ideology</li>
+        <li IfModActive="Ludeon.Rimworld.Ideology">Mod Patches/Ludeon/Biotech</li>
+
+        <li>/</li> <!-- load the removal patch last -->
+    </v1.6>
+</loadFolders>

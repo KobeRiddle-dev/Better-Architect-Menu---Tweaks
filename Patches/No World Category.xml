@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Move remaining things to More -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[designationCategory="Ferny_World"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Misc</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Remove World Category -->
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/DesignationCategoryDef[defName="Ferny_World"]</xpath>
+    </Operation>
+
+</Patch>

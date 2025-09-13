@@ -1,0 +1,11 @@
+# Better Architect Menu | No People Category
+
+Removes the World Category. Moves Outreach and Monolith subcategories to More.
+
+## Recommended mods 
+- [Better Architect Menu | Combine Power and Resources]()
+- [Better Architect Menu | No Animal Bedding Subcategory]()
+- [Better Architect Menu | No Automation Category]()
+- [Better Architect Menu | No People Category]()
+- [Clean Categories: Dropdowns](https://steamcommunity.com/sharedfiles/filedetails/?id=3455529827) (by ferny)
+- [Clean Categories: Dropdowns *Extended*](https://github.com/KobeRiddle-dev/Clean-Categories-Dropdowns-Extended) (by me)
