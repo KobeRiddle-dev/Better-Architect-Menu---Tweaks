@@ -1,4 +1,4 @@
-# Better Architect Menu | No Animal Bedding Category
+# Better Architect Menu | No Animal Bedding Subcategory
 
 Removes the Animal/Bedding subcategory and moves animal bedding to Animals/Ranching.
 
