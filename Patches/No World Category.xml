@@ -2,11 +2,15 @@
 <Patch>
 
     <!-- Move remaining things to More -->
-    <Operation Class="PatchOperationReplace">
+    <Operation Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[designationCategory="Ferny_World"]/designationCategory</xpath>
-        <value>
-            <designationCategory>Misc</designationCategory>
-        </value>
+
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[designationCategory="Ferny_World"]/designationCategory</xpath>
+            <value>
+                <designationCategory>Misc</designationCategory>
+            </value>
+        </match>
     </Operation>
 
     <!-- Remove World Category -->
