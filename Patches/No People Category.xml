@@ -3,10 +3,15 @@
 
     <!-- Move remaining things to More -->
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef/[designationCategory="Ferny_Life"]/designationCategory</xpath>
+        <xpath>Defs/ThingDef[designationCategory="Ferny_Life"]/designationCategory</xpath>
         <value>
             <designationCategory>Misc</designationCategory>
         </value>
+    </Operation>
+
+    <!-- Remove People Category -->
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/DesignationCategoryDef[defName="Ferny_Life"]</xpath>
     </Operation>
 
 </Patch>
