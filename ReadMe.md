@@ -1,6 +1,6 @@
 # Better Architect Menu | No People Category
 
-Removes the Animal/Bedding subcategory and moves animal bedding to Animals/Ranching.
+Removes the People Category. Moves Culture to More and Childhood to Furniture.
 
 ## Recommended mods 
 - [Clean Categories: Dropdowns](https://steamcommunity.com/sharedfiles/filedetails/?id=3455529827) (by ferny)
@@ -9,10 +9,3 @@ Removes the Animal/Bedding subcategory and moves animal bedding to Animals/Ranch
 - [Better Architect Menu | No Automation Category]()
 - [Better Architect Menu | Combine Power and Resources]()
 - [Better Architect Menu | No Animal Bedding Subcategory]()
-- 
-
-## Mods Supported:
-
-- Core
-- More Animal Beds
-- Any other mod whose beds inherit from `AnimalBedFurnitureBase`

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Move remaining things to More -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef/[designationCategory="Ferny_Life"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Misc</designationCategory>
+        </value>
+    </Operation>
+
+</Patch>
