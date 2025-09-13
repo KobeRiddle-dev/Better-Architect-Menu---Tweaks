@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Remove existing designation categories -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDefs[
+            defName="ToiletStallDoor"
+            or defName="PitLatrine"
+            or defName="WashBucket"
+            or defName="KitchenSink"
+            or defName="BasinStuffFountain"
+            or @ParentName="DubsDirtyTerletBase"
+            or defName="BathMat"
+            or @ParentName="DubsDirtyBathtubBase"
+            or @ParentName="DubsDirtyShowerBase"
+            or defName="WashingMachine"
+            or defName="WaterTrough"
+            or defName="PetWaterBowl"
+            or defName="LitterBox"
+            ]
+            /designationCategory</xpath>
+
+        <match Class="PatchOperationRemove">
+            <xpath>Defs/ThingDefs[
+                defName="ToiletStallDoor"
+                or defName="PitLatrine"
+                or defName="WashBucket"
+                or defName="KitchenSink"
+                or defName="BasinStuffFountain"
+                or @ParentName="DubsDirtyTerletBase"
+                or defName="BathMat"
+                or @ParentName="DubsDirtyBathtubBase"
+                or @ParentName="DubsDirtyShowerBase"
+                or defName="WashingMachine"
+                or defName="WaterTrough"
+                or defName="PetWaterBowl"
+                or defName="LitterBox"
+                ]
+                /designationCategory</xpath>
+        </match>
+
+    </Operation>
+
+    <!-- Move Hygiene Buildings -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDefs[
+            defName="ToiletStallDoor"
+            or defName="PitLatrine"
+            or defName="WashBucket"
+            or defName="KitchenSink"
+            or defName="BasinStuffFountain"
+            or @ParentName="DubsDirtyTerletBase"
+            or defName="BathMat"
+            or @ParentName="DubsDirtyBathtubBase"
+            or @ParentName="DubsDirtyShowerBase"
+            ]</xpath>
+        <value>
+            <designationCategory>KobeRiddle_Hygiene</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Move Washing Machine -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDefs[defName="WashingMachine"]</xpath>
+        <value>
+            <designationCategory>Ferny_ProcessingProduction</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Move Animal things -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDefs[defName="WaterTrough" or defName="PetWaterBowl" or defName="LitterBox"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Ranching</designationCategory>
+        </value>
+    </Operation>
+
+</Patch>
