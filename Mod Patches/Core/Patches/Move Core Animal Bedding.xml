@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Move Beds -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@ParentName="AnimalBedFurnitureBase" or defName="AnimalSleepingSpot"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Ranching</designationCategory>
+        </value>
+    </Operation>
+
+</Patch>

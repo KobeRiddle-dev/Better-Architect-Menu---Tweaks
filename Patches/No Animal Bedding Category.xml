@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Remove Bedding Category -->
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/DesignationCategoryDef[defName="Ferny_AnimalBedding"]</xpath>
+    </Operation>
+
+</Patch>
