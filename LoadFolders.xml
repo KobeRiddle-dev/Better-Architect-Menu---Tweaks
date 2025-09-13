@@ -1,6 +1,6 @@
 <loadFolders>
     <v1.6>
-        <li>Mod Patches/Core</li>
+        <li>Mod Patches/Ludeon/Core</li>
 
         <li IfModActive="Ludeon.Rimworld.Anomaly">Mod Patches/Ludeon/Anomaly</li>
 
