@@ -3,8 +3,7 @@
 
     <!-- Remove existing designation categories -->
     <Operation Class="PatchOperationConditional">
-        <xpath>Defs/ThingDefs[
-            defName="ToiletStallDoor"
+        <xpath>Defs/ThingDefs[defName="ToiletStallDoor"
             or defName="PitLatrine"
             or defName="WashBucket"
             or defName="KitchenSink"
@@ -16,13 +15,10 @@
             or defName="WashingMachine"
             or defName="WaterTrough"
             or defName="PetWaterBowl"
-            or defName="LitterBox"
-            ]
-            /designationCategory</xpath>
+            or defName="LitterBox"]/designationCategory</xpath>
 
         <match Class="PatchOperationRemove">
-            <xpath>Defs/ThingDefs[
-                defName="ToiletStallDoor"
+            <xpath>Defs/ThingDefs[defName="ToiletStallDoor"
                 or defName="PitLatrine"
                 or defName="WashBucket"
                 or defName="KitchenSink"
@@ -34,17 +30,14 @@
                 or defName="WashingMachine"
                 or defName="WaterTrough"
                 or defName="PetWaterBowl"
-                or defName="LitterBox"
-                ]
-                /designationCategory</xpath>
+                or defName="LitterBox"]/designationCategory</xpath>
         </match>
 
     </Operation>
 
     <!-- Move Hygiene Buildings -->
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDefs[
-            defName="ToiletStallDoor"
+        <xpath>Defs/ThingDefs[defName="ToiletStallDoor"
             or defName="PitLatrine"
             or defName="WashBucket"
             or defName="KitchenSink"
@@ -52,8 +45,7 @@
             or @ParentName="DubsDirtyTerletBase"
             or defName="BathMat"
             or @ParentName="DubsDirtyBathtubBase"
-            or @ParentName="DubsDirtyShowerBase"
-            ]</xpath>
+            or @ParentName="DubsDirtyShowerBase"]</xpath>
         <value>
             <designationCategory>KobeRiddle_Hygiene</designationCategory>
         </value>
