@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Move Animal Water -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="WaterTrough" or defName="PetWaterBowl"]</xpath>
+        <value>
+            <designationCategory>Ferny_Ranching</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Move Litter Box -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="LitterBox"]</xpath>
+        <value>
+            <designationCategory>Ferny_Ranching</designationCategory>
+        </value>
+    </Operation>
+
+</Patch>
