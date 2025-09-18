@@ -9,4 +9,12 @@
         </value>
     </Operation>
 
+    <!-- Move Memorial things into Culture -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[designationCategory="Ferny_Memorial"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ideology</designationCategory>
+        </value>
+    </Operation>
+
 </Patch>
