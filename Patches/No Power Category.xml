@@ -3,11 +3,17 @@
 
     <!-- Move everything in the subcategories to Power -->
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[designationCategory="Ferny_PowerGeneration" or designationCategory="Ferny_PowerStorage"
+        <xpath>Defs/ThingDef[designationCategory="Ferny_PowerGeneration"
+            or designationCategory="Ferny_PowerStorage"
             or designationCategory="Ferny_PowerManagement"]/designationCategory</xpath>
         <value>
             <designationCategory>Power</designationCategory>
         </value>
+    </Operation>
+
+    <!-- Remove Subcategories -->
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/DesignationCategoryDef[modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory[text()="Power"]]</xpath>
     </Operation>
 
     <!-- Move Power Category -->
@@ -16,7 +22,7 @@
         <value>
             <modExtensions>
                 <li Class="BetterArchitect.NestedCategoryExtension">
-                    <parentCategory>Power</parentCategory>
+                    <parentCategory>VCHE_PipeNetworks</parentCategory>
                 </li>
             </modExtensions>
         </value>
