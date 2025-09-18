@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Move Fence -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Fence"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Walls</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Move Fence Gate -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="FenceGate"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Doors</designationCategory>
+        </value>
+    </Operation>
+    
+</Patch>

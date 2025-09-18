@@ -13,7 +13,8 @@
 			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3563882422</steamWorkshopUrl>
 		</li>
 	</modDependencies>
-	<description>Removes the Animal/Bedding subcategory and moves animal bedding to Animals/Ranching.\nRecommended to be used together with Clean Categories Dropdowns: *Extended*.</description>
+	<description>Removes the Animal/Bedding subcategory and moves animal bedding to Animals/Ranching.\n\nAlso moves Fences to Structure/Walls and the standard fence gate to Structure/Doors.
+\n\nRecommended to be used together with Clean Categories Dropdowns: *Extended*.</description>
 	<loadAfter>
 		<li>Ludeon.Rimworld</li>
 		<li>Ludeon.Rimworld.Royalty</li>

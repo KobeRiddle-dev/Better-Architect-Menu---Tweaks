@@ -3,6 +3,8 @@
         <li>/</li>
         <li>Mod Patches/Core</li>
 
+        <li IfModActive="VanillaExpanded.VFEArchitect">Mod Patches/VFE Architect</li>
+
         <!-- No additional patch needed for More Animal Beds -->
     </v1.6>
 </loadFolders>
