@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Move everything in Filth to Pollution -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[designationCategory="Ferny_Filth" or designationCategory="Ferny_Cooling"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Power</designationCategory>
+        </value>
+    </Operation>
+
+</Patch>

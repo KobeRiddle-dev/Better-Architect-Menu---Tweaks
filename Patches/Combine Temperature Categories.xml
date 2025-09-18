@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Move everything in Heating & Cooling to Airflow -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[designationCategory="Ferny_Heating" or designationCategory="Ferny_Cooling"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_AirManagement</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Rename Airflow to Temperature -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/DesignationCategoryDef[defName="Ferny_AirManagement"]/label</xpath>
+        <value>
+            <label>Temperature</label>
+        </value>
+    </Operation>
+
+</Patch>

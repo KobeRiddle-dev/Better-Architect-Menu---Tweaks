@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Move everything in Terraforming to Area/Other -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[designationCategory="Ferny_Terraforming"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Temperature</designationCategory>
+        </value>
+    </Operation>
+
+</Patch>
