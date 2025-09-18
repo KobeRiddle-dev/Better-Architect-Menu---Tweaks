@@ -3,9 +3,9 @@
 
     <!-- Move everything in Filth to Pollution -->
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[designationCategory="Ferny_Filth" or designationCategory="Ferny_Cooling"]/designationCategory</xpath>
+        <xpath>Defs/ThingDef[designationCategory="Ferny_Filth"]/designationCategory</xpath>
         <value>
-            <designationCategory>Power</designationCategory>
+            <designationCategory>Ferny_Pollution</designationCategory>
         </value>
     </Operation>
 
