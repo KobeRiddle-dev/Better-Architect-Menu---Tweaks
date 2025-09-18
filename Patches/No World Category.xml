@@ -13,6 +13,19 @@
         </match>
     </Operation>
 
+    <!-- Move remaining subcategories to More -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/DesignationCategoryDef/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory[text()="Ferny_World"]</xpath>
+
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/DesignationCategoryDef/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory[text()="Ferny_World"]</xpath>
+            <value>
+                <parentCategory>Misc</parentCategory>
+            </value>
+        </match>
+
+    </Operation>
+
     <!-- Remove World Category -->
     <Operation Class="PatchOperationRemove">
         <xpath>Defs/DesignationCategoryDef[defName="Ferny_World"]</xpath>

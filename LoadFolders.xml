@@ -3,7 +3,7 @@
         <li>Mod Patches/Ludeon/Core</li>
 
         <li IfModActive="Ludeon.Rimworld.Anomaly">Mod Patches/Ludeon/Anomaly</li>
-
+                
         <li>/</li> <!-- load the removal patch last -->
     </v1.6>
 </loadFolders>

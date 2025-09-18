@@ -9,4 +9,16 @@
         </value>
     </Operation>
 
+    <!-- Move summon category things to Outreach -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[designationCategory="Ferny_Summon"]/designationCategory</xpath>
+
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[designationCategory="Ferny_Summon"]/designationCategory</xpath>
+            <value>
+                <designationCategory>Ferny_Outreach</designationCategory>
+            </value>
+        </match>
+    </Operation>
+
 </Patch>
