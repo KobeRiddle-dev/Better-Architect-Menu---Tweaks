@@ -6,6 +6,7 @@
         <label>Combine Area/Filth into Area/Pollution. (Default: True)</label>
         <id>CombineFilthAndPollution</id>
         <category>AreaCategory</category>
+        <order>1</order>
 
         <operations>
 
