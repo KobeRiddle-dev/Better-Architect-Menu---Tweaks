@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Move remaining things to More -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[designationCategory="Ferny_Life"
+            or designationCategory="Ferny_Control"]/designationCategory</xpath>
+
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[designationCategory="Ferny_Life"
+                or designationCategory="Ferny_Control"]/designationCategory</xpath>
+            <value>
+                <designationCategory>Misc</designationCategory>
+            </value>
+        </match>
+
+    </Operation>
+
+    <!-- Move remaining subcategories to More -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/DesignationCategoryDef/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory[text()="Ferny_Life"]</xpath>
+
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/DesignationCategoryDef/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory[text()="Ferny_Life"]</xpath>
+            <value>
+                <parentCategory>Misc</parentCategory>
+            </value>
+        </match>
+
+    </Operation>
+
+    <!-- Remove People Category -->
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/DesignationCategoryDef[defName="Ferny_Life"]</xpath>
+    </Operation>
+
+</Patch>

@@ -1,6 +1,11 @@
 <loadFolders>
     <v1.6>
+        <li>Mod Patches/Core</li>
+        
         <li IfModActive="Dubwise.DubsBadHygiene">Mod Patches/Dubs Bad Hygiene</li>
-        <li>/</li>
+        <li IfModActive="Ludeon.Rimworld.Ideology">Mod Patches/Ludeon/Ideology</li>
+        <li IfModActive="Ludeon.Rimworld.Biotech">Mod Patches/Ludeon/Biotech</li>
+
+        <li>/</li> <!-- load any removal patches last -->
     </v1.6>
 </loadFolders>

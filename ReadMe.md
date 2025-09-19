@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Better Architect Menu | Tweaks
 
 ## Toggleable Tweaks
@@ -24,6 +25,11 @@ These patches leave Resources/Water with just water infrastructure, and the user
 - Combine Filth and Pollution
 - Remove Terraforming Subcategory
 
-## Recommended mods
+### No People
+
+- Move Culture to More (requires Ideology)
+- Move Childhood to Furniture (requires Biotech)
+
+## Recommended mods 
 - [Clean Categories: Dropdowns](https://steamcommunity.com/sharedfiles/filedetails/?id=3455529827)
 - [Clean Categories: Dropdowns *Extended*](https://github.com/KobeRiddle-dev/Clean-Categories-Dropdowns-Extended)

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Move Childhood Category -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/DesignationCategoryDef[defName="Ferny_Childhood"]/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory</xpath>
+        <value>
+            <parentCategory>Furniture</parentCategory>
+        </value>
+    </Operation>
+
+</Patch>
