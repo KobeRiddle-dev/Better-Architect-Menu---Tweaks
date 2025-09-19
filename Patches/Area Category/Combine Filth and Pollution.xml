@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <defaultValue>True</defaultValue>
+        <label>Combine Area/Filth into Area/Pollution. (Default: True)</label>
+        <id>CombineFilthAndPollution</id>
+        <category>AreaCategory</category>
+        <order>1</order>
+
+        <operations>
+
+            <!-- Move everything in Filth to Pollution -->
+            <li Class="PatchOperationConditional">
+                <xpath>Defs/ThingDef[designationCategory="Ferny_Filth"]/designationCategory</xpath>
+
+                <match Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[designationCategory="Ferny_Filth"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Pollution</designationCategory>
+                    </value>
+                </match>
+            </li>
+        </operations>
+
+    </Operation>
+
+</Patch>

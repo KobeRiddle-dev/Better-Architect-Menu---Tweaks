@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ModSettingsFramework.ModOptionCategoryDef Name="TweakModOptions" Abstract="True">
+        <modSettingsName>Better Architect Menu | Tweaks</modSettingsName>
+        <modPackageSettingsID>KobeRiddle_BetterArchitectMenu_Tweaks</modPackageSettingsID>
+    </ModSettingsFramework.ModOptionCategoryDef>
+
+    <ModSettingsFramework.ModOptionCategoryDef ParentName="TweakModOptions">
+        <defName>KoberiddleAreaCategory</defName>
+        <label>Area Category</label>
+        <order>0</order>
+    </ModSettingsFramework.ModOptionCategoryDef>
+
+</Defs>

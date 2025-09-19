@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <defaultValue>True</defaultValue>
+        <label>Combine Temperature Subcategories. (Default: True)</label>
+        <id>CombineTemperatureSubcategories</id>
+        <tooltip>Combines Heating and Cooling into Airflow, and renames it to Temperature. (Default: True)</tooltip>
+        <category>AreaCategory</category>
+        <order>0</order>
+
+        <operations>
+
+            <!-- Move everything in Heating & Cooling to Airflow -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[designationCategory="Ferny_Heating" or designationCategory="Ferny_Cooling"]/designationCategory</xpath>
+                <value>
+                    <designationCategory>Ferny_AirManagement</designationCategory>
+                </value>
+            </li>
+
+            <!-- Rename Airflow to Temperature -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/DesignationCategoryDef[defName="Ferny_AirManagement"]/label</xpath>
+                <value>
+                    <label>Temperature</label>
+                </value>
+            </li>
+
+        </operations>
+
+    </Operation>
+
+</Patch>
