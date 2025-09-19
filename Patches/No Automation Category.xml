@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Move remaining subcategories to Production -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/DesignationCategoryDef/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory[text()="Ferny_Automation"]</xpath>
+
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/DesignationCategoryDef/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory[text()="Ferny_Automation"]</xpath>
+            <value>
+                <parentCategory>Production</parentCategory>
+            </value>
+        </match>
+
+    </Operation>
+
+    <!-- Remove Automation Category -->
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/DesignationCategoryDef[defName="Ferny_Automation"]</xpath>
+    </Operation>
+
+</Patch>
