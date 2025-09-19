@@ -13,12 +13,12 @@
             <li Class="PatchOperationConditional">
                 <xpath>Defs/ThingDef[designationCategory="Ferny_Filth"]/designationCategory</xpath>
 
-                <li Class="PatchOperationReplace">
+                <match Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[designationCategory="Ferny_Filth"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_Pollution</designationCategory>
                     </value>
-                </li>
+                </match>
             </li>
         </operations>
 
