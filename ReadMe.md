@@ -1,12 +1,29 @@
-# Better Architect Menu | No Automation Category
+# Better Architect Menu | Tweaks
 
-Removes the Automation Category. Moves Mechanoids subcategory to Biotech. In the future, will move factories subcategories to Production.
+## Toggleable Tweaks
 
-## Recommended mods 
-- [Better Architect Menu | Combine Power and Resources Categories]()
-- [Better Architect Menu | Combine Temperature Subcategories]()
-- [Better Architect Menu | No Animal Bedding Subcategory]()
-- [Better Architect Menu | No People Category]()
-- [Better Architect Menu | No World Category]()
+### Automation Category
+
+- Remove the Automation Category. In the future, will move factories subcategories to Production.
+- Move Mechanoids subcategory to Biotech.
+
+### Resources/Water
+
+- Move Animal things to Animals
+    - Animal Water Trough, Pet Water Bowl, and Litter Box to Animals/Ranching
+- Move bathroom fixtures to a new Furniture subcategory called "Hygiene"
+- Move Fire Sprinkler to Area/Firefoam (and rename it to "Fire Suppression").
+- Move radiators to Area/Heating
+- Move Washing Machine to Production/Processing
+
+These patches leave Resources/Water with just water infrastructure, and the users of water are all in more sensible places. After all, you don't have the Electric Smelter in the Power category just because it uses electricity.
+
+### Area
+
+- Combine Temperature Subcategories
+- Combine Filth and Pollution
+- Remove Terraforming Subcategory
+
+## Recommended mods
 - [Clean Categories: Dropdowns](https://steamcommunity.com/sharedfiles/filedetails/?id=3455529827)
 - [Clean Categories: Dropdowns *Extended*](https://github.com/KobeRiddle-dev/Clean-Categories-Dropdowns-Extended)

@@ -1,5 +1,6 @@
 <loadFolders>
     <v1.6>
-        <li>/</li> <!-- load the removal patch last -->
+        <li IfModActive="Dubwise.DubsBadHygiene">Mod Patches/Dubs Bad Hygiene</li>
+        <li>/</li>
     </v1.6>
 </loadFolders>
