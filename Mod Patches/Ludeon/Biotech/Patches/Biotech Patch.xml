@@ -9,4 +9,12 @@
         </value>
     </Operation>
 
+    <!-- Move Mechanoids Category -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/DesignationCategoryDef[defName="Ferny_Mechanoids"]/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory</xpath>
+        <value>
+            <parentCategory>Ferny_Biotech</parentCategory>
+        </value>
+    </Operation>
+
 </Patch>

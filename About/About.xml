@@ -19,8 +19,13 @@
 			<displayName>Vanilla Expanded Framework</displayName>
 			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013</steamWorkshopUrl>
 		</li>
+		<li>
+            <packageId>VanillaExpanded.VChemfuelE</packageId>
+			<displayName>Vanilla Chemfuel Expanded</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2792917473</steamWorkshopUrl>
+		</li>
 	</modDependencies>
-	<description>A series of toggleable tweaks for Better Architect Menu</description>
+    <description>A series of toggleable tweaks for Better Architect Menu</description>
 	<loadAfter>
 		<li>Ludeon.Rimworld</li>
 		<li>Ludeon.Rimworld.Royalty</li>
@@ -33,6 +38,7 @@
 		
 		<li>Animal.BedsNew</li>
 		<li>Dubwise.DubsBadHygiene</li>
+		<li>VanillaExpanded.VChemfuelE</li>
 
 	</loadAfter>
 </ModMetaData>

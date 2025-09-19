@@ -7,6 +7,10 @@
 - Remove the Automation Category. In the future, will move factories subcategories to Production.
 - Move Mechanoids subcategory to Biotech.
 
+### Power
+
+- Combine all Power subcategories and make Power a subcategory of Resources
+
 ### Resources/Water
 
 - Move Animal things to Animals
@@ -24,12 +28,11 @@ These patches leave Resources/Water with just water infrastructure, and the user
 - Combine Filth and Pollution
 - Remove Terraforming Subcategory
 
-### No People
+### People
 
 - Move Culture to More (requires Ideology)
 - Move Childhood to Furniture (requires Biotech)
 - Remove the People Category
-
 
 ### Animals
 
