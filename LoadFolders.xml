@@ -1,13 +1,15 @@
 <loadFolders>
     <v1.6>
-        <li>Mod Patches/Core</li>
-
-        <li IfModActive="Dubwise.DubsBadHygiene">Mod Patches/Dubs Bad Hygiene</li>
+        
+        <!-- Ludeon -->
+        <li>Mod Patches/Ludeon/Core</li>
         <li IfModActive="Ludeon.Rimworld.Ideology">Mod Patches/Ludeon/Ideology</li>
         <li IfModActive="Ludeon.Rimworld.Biotech">Mod Patches/Ludeon/Biotech</li>
+        <li IfModActive="Ludeon.Rimworld.Anomaly">Mod Patches/Ludeon/Anomaly</li>
+
+        <li IfModActive="Dubwise.DubsBadHygiene">Mod Patches/Dubs Bad Hygiene</li>
         <li IfModActive="VanillaExpanded.VFEArchitect">Mod Patches/VFE Architect</li>
-
-        <li>/</li> <!-- load any removal patches last -->
-
+        
+        <li>/</li> <!-- load any removal patches last --> 
     </v1.6>
 </loadFolders>

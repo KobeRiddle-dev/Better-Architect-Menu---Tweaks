@@ -28,13 +28,19 @@ These patches leave Resources/Water with just water infrastructure, and the user
 
 - Move Culture to More (requires Ideology)
 - Move Childhood to Furniture (requires Biotech)
+- Remove the People Category
 
 
-# Better Architect Menu | No Animal Bedding Subcategory
+### Animals
 
 - Remove the Animal/Bedding subcategory and move animal bedding to Animals/Ranching.
 - Move Fences to Structure/Walls and the standard fence gate to Structure/Doors.
 
-## Recommended mods 
+### World
+- Remove the World Category.
+- Moves Outreach to More
+- Move Monolith to More.
+
+## Recommended mods
 - [Clean Categories: Dropdowns](https://steamcommunity.com/sharedfiles/filedetails/?id=3455529827)
 - [Clean Categories: Dropdowns *Extended*](https://github.com/KobeRiddle-dev/Clean-Categories-Dropdowns-Extended)

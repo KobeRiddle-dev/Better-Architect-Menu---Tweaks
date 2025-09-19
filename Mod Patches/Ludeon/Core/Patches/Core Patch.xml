@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Move Outreach Category -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/DesignationCategoryDef[defName="Ferny_Outreach"]/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory</xpath>
+        <value>
+            <parentCategory>Misc</parentCategory>
+        </value>
+    </Operation>
+
+    <!-- Move summon category things to Outreach -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[designationCategory="Ferny_Summon"]/designationCategory</xpath>
+
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[designationCategory="Ferny_Summon"]/designationCategory</xpath>
+            <value>
+                <designationCategory>Ferny_Outreach</designationCategory>
+            </value>
+        </match>
+    </Operation>
+
+</Patch>
