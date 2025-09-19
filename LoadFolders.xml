@@ -9,7 +9,8 @@
 
         <li IfModActive="Dubwise.DubsBadHygiene">Mod Patches/Dubs Bad Hygiene</li>
         <li IfModActive="VanillaExpanded.VFEArchitect">Mod Patches/VFE Architect</li>
-        
+
+        <li>Area Category</li> <!-- Area Category needs to come after certain other patches -->
         <li>/</li> <!-- load any removal patches last --> 
     </v1.6>
 </loadFolders>
