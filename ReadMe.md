@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Better Architect Menu | Tweaks
 
 ## Toggleable Tweaks
@@ -29,6 +28,12 @@ These patches leave Resources/Water with just water infrastructure, and the user
 
 - Move Culture to More (requires Ideology)
 - Move Childhood to Furniture (requires Biotech)
+
+
+# Better Architect Menu | No Animal Bedding Subcategory
+
+- Remove the Animal/Bedding subcategory and move animal bedding to Animals/Ranching.
+- Move Fences to Structure/Walls and the standard fence gate to Structure/Doors.
 
 ## Recommended mods 
 - [Clean Categories: Dropdowns](https://steamcommunity.com/sharedfiles/filedetails/?id=3455529827)

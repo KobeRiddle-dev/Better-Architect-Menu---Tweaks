@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Fences -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="VFEArch_BrickFence" or defName="VFEArch_ChainlinkFence" 
+            or defName="VFEArch_InvisibleFence" or defName="VFEArch_LowFence" or defName="VFEArch_PicketFence"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Walls</designationCategory>
+        </value>
+    </Operation>
+
+</Patch>
