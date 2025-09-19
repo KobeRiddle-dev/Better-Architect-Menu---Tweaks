@@ -27,6 +27,7 @@
 	</modDependencies>
     <description>A series of toggleable tweaks for Better Architect Menu</description>
 	<loadAfter>
+        <!-- Ludeon -->
 		<li>Ludeon.Rimworld</li>
 		<li>Ludeon.Rimworld.Royalty</li>
 		<li>Ludeon.Rimworld.Ideology</li>
@@ -34,8 +35,10 @@
 		<li>Ludeon.Rimworld.Anomaly</li>
 		<li>Ludeon.Rimworld.Odyssey</li>
 
+        <!-- Ferny -->
 		<li>Ferny.BetterArchitect</li>
 		
+        <!-- Other Mods -->
 		<li>Animal.BedsNew</li>
 		<li>Dubwise.DubsBadHygiene</li>
 		<li>VanillaExpanded.VChemfuelE</li>
