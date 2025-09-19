@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-    <!-- Move everything in Filth to Pollution -->
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[designationCategory="Ferny_Filth"]/designationCategory</xpath>
-        <value>
-            <designationCategory>Ferny_Pollution</designationCategory>
-        </value>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <defaultValue>True</defaultValue>
+        <label>Combine Area/Filth into Area/Pollution. (Default: True)</label>
+        <id>KobeRiddle.CombineFilthAndPollution</id>
+        <!-- <category>KobeRiddle.Area</category> -->
+        <!-- <order>0</order> -->
+
+        <operations>
+
+            <!-- Move everything in Filth to Pollution -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[designationCategory="Ferny_Filth"]/designationCategory</xpath>
+                <value>
+                    <designationCategory>Ferny_Pollution</designationCategory>
+                </value>
+            </li>
+        </operations>
+
     </Operation>
 
 </Patch>
