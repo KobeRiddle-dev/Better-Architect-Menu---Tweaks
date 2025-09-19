@@ -12,8 +12,6 @@
 			<displayName>Better Architect Menu</displayName>
 			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3563882422</steamWorkshopUrl>
 		</li>
-	</modDependencies>
-	<modDependencies>
 		<li>
 			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
 			<displayName>Vanilla Expanded Framework</displayName>
