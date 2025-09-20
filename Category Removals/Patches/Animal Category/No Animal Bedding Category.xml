@@ -1,9 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-    <!-- Remove Bedding Category -->
-    <Operation Class="PatchOperationRemove">
-        <xpath>Defs/DesignationCategoryDef[defName="Ferny_AnimalBedding"]</xpath>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <id>RemoveBeddingCategory</id>
+        <defaultValue>True</defaultValue>
+        <label>Remove bedding Category. (Default: True)</label>
+        <tooltip>Moves all animal beds into Animals/Ranching.</tooltip>
+        <category>KobeRiddle_AnimalCategory</category>
+        <order>0</order>
+
+        <operations>
+
+            <!-- Move Bedding -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[@ParentName="AnimalBedFurnitureBase" or defName="AnimalSleepingSpot"]/designationCategory</xpath>
+                <value>
+                    <designationCategory>Ferny_Ranching</designationCategory>
+                </value>
+            </li>
+
+        </operations>
+
     </Operation>
 
 </Patch>

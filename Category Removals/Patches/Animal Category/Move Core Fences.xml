@@ -11,12 +11,19 @@
 
         <operations>
 
-            <!-- Fences -->
+            <!-- Move Fence -->
             <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[defName="VFEArch_BrickFence" or defName="VFEArch_ChainlinkFence"
-                    or defName="VFEArch_InvisibleFence" or defName="VFEArch_LowFence" or defName="VFEArch_PicketFence"]/designationCategory</xpath>
+                <xpath>Defs/ThingDef[defName="Fence"]/designationCategory</xpath>
                 <value>
                     <designationCategory>Ferny_Walls</designationCategory>
+                </value>
+            </li>
+
+            <!-- Move Fence Gate -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="FenceGate"]/designationCategory</xpath>
+                <value>
+                    <designationCategory>Ferny_Doors</designationCategory>
                 </value>
             </li>
 
