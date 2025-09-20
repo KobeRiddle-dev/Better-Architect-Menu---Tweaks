@@ -31,12 +31,6 @@
     </ModSettingsFramework.ModOptionCategoryDef>
 
     <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
-        <defName>KobeRiddle_PowerCategory</defName>
-        <label>Power Category</label>
-        <order>3</order>
-    </ModSettingsFramework.ModOptionCategoryDef>
-
-    <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
         <defName>KobeRiddle_ResourcesCategory</defName>
         <label>Resources Category</label>
         <order>4</order>
