@@ -27,10 +27,10 @@
 
             <!-- Move remaining subcategories to Production -->
             <li Class="PatchOperationConditional">
-                <xpath>Defs/DesignationCategoryDef/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory[text()="Ferny_Life"]</xpath>
+                <xpath>Defs/DesignationCategoryDef/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory[text()="Ferny_Automation"]</xpath>
 
                 <match Class="PatchOperationReplace">
-                    <xpath>Defs/DesignationCategoryDef/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory[text()="Ferny_Life"]</xpath>
+                    <xpath>Defs/DesignationCategoryDef/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory[text()="Ferny_Automation"]</xpath>
                     <value>
                         <parentCategory>Production</parentCategory>
                     </value>
