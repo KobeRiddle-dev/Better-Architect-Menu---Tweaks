@@ -1,6 +1,8 @@
 <!-- Things load bottom to top. However, if there are identical file paths, the bottom will take priority as the top (later) will be skipped. -->
 <loadFolders>
     <v1.6>
+        <li>/</li>
+        
         <li>Category Removals</li> <!-- Remove categories after doing everything else -->
         
         <li>Area Category</li> <!-- Area Category needs to come after certain other patches -->
