@@ -8,7 +8,5 @@
             <designationCategory>Ferny_Heating</designationCategory>
         </value>
     </Operation>
-
-    <!-- defName="RadiatorStuffed" or defName="RadiatorLarge" or  -->
-
+    
 </Patch>
