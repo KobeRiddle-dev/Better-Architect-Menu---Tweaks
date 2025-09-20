@@ -42,4 +42,10 @@
         <order>5</order>
     </ModSettingsFramework.ModOptionCategoryDef>
 
+    <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
+        <defName>KobeRiddle_MoreCategory</defName>
+        <label>More Category</label>
+        <order>6</order>
+    </ModSettingsFramework.ModOptionCategoryDef>
+
 </Defs>

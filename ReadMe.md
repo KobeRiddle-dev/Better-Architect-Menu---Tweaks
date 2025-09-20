@@ -40,9 +40,8 @@ Also renames certain other categories to be more consistent and understandable.
 
 ### People
 
-- Move Culture to More (requires Ideology)
 - Move Childhood to Furniture (requires Biotech)
-- Remove the People Category
+- Remove the People Category and move any remaining subcategories and items into More
 
 ### Power
 
