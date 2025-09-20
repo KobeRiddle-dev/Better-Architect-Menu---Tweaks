@@ -1,15 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <ModSettingsFramework.ModOptionCategoryDef Name="TweakModOptions" Abstract="True">
+    <ModSettingsFramework.ModOptionCategoryDef Name="BetterArchitectMenuTweaksOption" Abstract="True">
         <modSettingsName>Better Architect Menu | Tweaks</modSettingsName>
         <modPackageSettingsID>KobeRiddle_BetterArchitectMenu_Tweaks</modPackageSettingsID>
     </ModSettingsFramework.ModOptionCategoryDef>
 
-    <ModSettingsFramework.ModOptionCategoryDef ParentName="TweakModOptions">
-        <defName>KoberiddleAreaCategory</defName>
-        <label>Area Category</label>
+    <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
+        <defName>KobeRiddle_AnimalCategory</defName>
+        <label>Animal Category</label>
         <order>0</order>
+    </ModSettingsFramework.ModOptionCategoryDef>
+
+    <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
+        <defName>KobeRiddle_AreaCategory</defName>
+        <label>Area Category</label>
+        <order>1</order>
+    </ModSettingsFramework.ModOptionCategoryDef>
+
+    <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
+        <defName>KobeRiddle_AutomationCategory</defName>
+        <label>Automation Category</label>
+        <order>2</order>
+    </ModSettingsFramework.ModOptionCategoryDef>
+
+    <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
+        <defName>KobeRiddle_PeopleCategory</defName>
+        <label>People Category</label>
+        <order>3</order>
+    </ModSettingsFramework.ModOptionCategoryDef>
+
+    <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
+        <defName>KobeRiddle_PowerCategory</defName>
+        <label>Power Category</label>
+        <order>3</order>
+    </ModSettingsFramework.ModOptionCategoryDef>
+
+    <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
+        <defName>KobeRiddle_ResourcesCategory</defName>
+        <label>Resources Category</label>
+        <order>4</order>
+    </ModSettingsFramework.ModOptionCategoryDef>
+
+    <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
+        <defName>KobeRiddle_WorldCategory</defName>
+        <label>World Category</label>
+        <order>5</order>
     </ModSettingsFramework.ModOptionCategoryDef>
 
 </Defs>
