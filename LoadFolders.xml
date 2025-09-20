@@ -3,7 +3,7 @@
     <v1.6>
         <li>/</li>
         
-        <li>Category Removals</li> <!-- Remove categories after doing everything else -->
+        <!-- <li>Category Removals</li> Remove categories after doing everything else -->
         
         <!-- Ludeon -->
         <li>Mod Patches/Ludeon/Core</li>
@@ -15,7 +15,6 @@
         <li IfModActive="VanillaExpanded.VFEArchitect">Mod Patches/VFE Architect</li>
         <li IfModActive="VanillaExpanded.VChemfuelE">Mod Patches/VE Chemfuel</li>
 
-        <li>Area Category</li>
         <li>Rename Categories</li>
     </v1.6>
 </loadFolders>
