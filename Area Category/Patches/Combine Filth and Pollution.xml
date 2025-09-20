@@ -2,10 +2,11 @@
 <Patch>
 
     <Operation Class="ModSettingsFramework.PatchOperationModOption">
-        <defaultValue>True</defaultValue>
-        <label>Combine Area/Filth into Area/Pollution. (Default: True)</label>
         <id>CombineFilthAndPollution</id>
-        <category>AreaCategory</category>
+        <defaultValue>True</defaultValue>
+        <label>Combine Filth and Pollution. (Default: True)</label>
+        <tooltip>Moves everything from Area/Filth into Area/Pollution.</tooltip>
+        <category>KobeRiddle_AreaCategory</category>
         <order>1</order>
 
         <operations>

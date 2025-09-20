@@ -2,11 +2,11 @@
 <Patch>
 
     <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <id>CombineTemperatureSubcategories</id>
         <defaultValue>True</defaultValue>
         <label>Combine Temperature Subcategories. (Default: True)</label>
-        <id>CombineTemperatureSubcategories</id>
-        <tooltip>Combines Heating and Cooling into Airflow, and renames it to Temperature. (Default: True)</tooltip>
-        <category>AreaCategory</category>
+        <tooltip>Combines Heating and Cooling into Airflow, and renames it to Temperature.</tooltip>
+        <category>KobeRiddle_AreaCategory</category>
         <order>0</order>
 
         <operations>
