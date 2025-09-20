@@ -3,7 +3,7 @@
 
     <ModSettingsFramework.ModOptionCategoryDef Name="BetterArchitectMenuTweaksOption" Abstract="True">
         <modSettingsName>Better Architect Menu | Tweaks</modSettingsName>
-        <modPackageSettingsID>KobeRiddle_BetterArchitectMenu_Tweaks</modPackageSettingsID>
+        <modPackageSettingsID>KobeRiddle.BetterArchitectMenu.Tweaks</modPackageSettingsID>
     </ModSettingsFramework.ModOptionCategoryDef>
 
     <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
