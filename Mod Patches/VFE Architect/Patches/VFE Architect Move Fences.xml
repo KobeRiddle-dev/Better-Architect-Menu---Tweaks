@@ -2,9 +2,9 @@
 <Patch>
 
     <Operation Class="ModSettingsFramework.PatchOperationModOption">
-        <id>CombineFilthAndPollution</id>
+        <id>MoveFences</id>
         <defaultValue>True</defaultValue>
-        <label>Remove bedding Category. (Default: True)</label>
+        <label>Move Fences. (Default: True)</label>
         <tooltip>Moves fences and fence gates into Structure/Walls and Structure/Doors, respectively.</tooltip>
         <category>KobeRiddle_AnimalCategory</category>
         <order>1</order>
