@@ -7,7 +7,7 @@
         <label>Move Fences. (Default: True)</label>
         <tooltip>Moves fences and fence gates into Structure/Walls and Structure/Doors, respectively.</tooltip>
         <category>KobeRiddle_AnimalCategory</category>
-        <order>999</order>
+        <order>1</order>
 
         <operations>
 

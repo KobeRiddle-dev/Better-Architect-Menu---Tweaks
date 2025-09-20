@@ -3,11 +3,6 @@
 
     <Operation Class="ModSettingsFramework.PatchOperationModOption">
         <id>MoveFences</id>
-        <defaultValue>True</defaultValue>
-        <label>Move Fences. (Default: True)</label>
-        <tooltip>Moves fences and fence gates into Structure/Walls and Structure/Doors, respectively.</tooltip>
-        <category>KobeRiddle_AnimalCategory</category>
-        <order>1</order>
 
         <operations>
 
