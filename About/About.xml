@@ -18,14 +18,14 @@
 			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013</steamWorkshopUrl>
 		</li>
 		<li>
-            <packageId>VanillaExpanded.VChemfuelE</packageId>
+			<packageId>VanillaExpanded.VChemfuelE</packageId>
 			<displayName>Vanilla Chemfuel Expanded</displayName>
 			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2792917473</steamWorkshopUrl>
 		</li>
 	</modDependencies>
-    <description>A series of toggleable tweaks for Better Architect Menu</description>
+	<description>A series of toggleable tweaks for Better Architect Menu</description>
 	<loadAfter>
-        <!-- Ludeon -->
+		<!-- Ludeon -->
 		<li>Ludeon.Rimworld</li>
 		<li>Ludeon.Rimworld.Royalty</li>
 		<li>Ludeon.Rimworld.Ideology</li>
@@ -33,10 +33,11 @@
 		<li>Ludeon.Rimworld.Anomaly</li>
 		<li>Ludeon.Rimworld.Odyssey</li>
 
-        <!-- Ferny -->
+		<!-- Ferny -->
 		<li>Ferny.BetterArchitect</li>
-		
-        <!-- Other Mods -->
+
+		<!-- Other Mods -->
+		<li>KobeRiddle.CategoriesDropdownsExtended</li>
 		<li>Animal.BedsNew</li>
 		<li>Dubwise.DubsBadHygiene</li>
 		<li>VanillaExpanded.VChemfuelE</li>
