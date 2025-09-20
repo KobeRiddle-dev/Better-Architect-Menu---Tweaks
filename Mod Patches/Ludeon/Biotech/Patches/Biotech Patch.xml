@@ -1,20 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-    <!-- Move Childhood Category -->
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/DesignationCategoryDef[defName="Ferny_Childhood"]/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory</xpath>
-        <value>
-            <parentCategory>Furniture</parentCategory>
-        </value>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <id>MoveChildHoodCategory</id>
+        <defaultValue>True</defaultValue>
+        <label>Move Childhood to Furniture. (Default: True)</label>
+        <tooltip>Moves Childhood subcategory from People to Furniture.</tooltip>
+        <category>KobeRiddle_PeopleCategory</category>
+        <order>1</order>
+
+        <operations>
+
+            <!-- Move Childhood Category -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/DesignationCategoryDef[defName="Ferny_Childhood"]/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory</xpath>
+                <value>
+                    <parentCategory>Furniture</parentCategory>
+                </value>
+            </li>
+
+        </operations>
+
     </Operation>
 
-    <!-- Move Mechanoids Category -->
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/DesignationCategoryDef[defName="Ferny_Mechanoids"]/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory</xpath>
-        <value>
-            <parentCategory>Ferny_Biotech</parentCategory>
-        </value>
+
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <id>MoveMechanoidsCategory</id>
+        <defaultValue>True</defaultValue>
+        <label>Move Mechanoids subcategory to Biotech. (Default: True)</label>
+        <tooltip>Move Mechanoids from Automation to Biotech</tooltip>
+        <category>KobeRiddle_AutomationCategory</category>
+        <order>1</order>
+
+        <operations>
+
+            <!-- Move Mechanoids Category -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/DesignationCategoryDef[defName="Ferny_Mechanoids"]/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory</xpath>
+                <value>
+                    <parentCategory>Ferny_Biotech</parentCategory>
+                </value>
+            </li>
+
+        </operations>
+
     </Operation>
 
 </Patch>

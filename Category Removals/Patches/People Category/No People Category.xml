@@ -1,37 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-    <!-- Move remaining things to More -->
-    <Operation Class="PatchOperationConditional">
-        <xpath>Defs/ThingDef[designationCategory="Ferny_Life"
-            or designationCategory="Ferny_Control"]/designationCategory</xpath>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <id>RemovePeopleCategory</id>
+        <defaultValue>True</defaultValue>
+        <label>Remove People Category. (Default: True)</label>
+        <tooltip>Remove the People Category and move all remaining subcategories and Other items into More.</tooltip>
+        <category>KobeRiddle_PeopleCategory</category>
+        <order>0</order>
 
-        <match Class="PatchOperationReplace">
-            <xpath>Defs/ThingDef[designationCategory="Ferny_Life"
-                or designationCategory="Ferny_Control"]/designationCategory</xpath>
-            <value>
-                <designationCategory>Misc</designationCategory>
-            </value>
-        </match>
+        <operations>
 
-    </Operation>
+            <!-- Move remaining things to More -->
+            <li Class="PatchOperationConditional">
+                <xpath>Defs/ThingDef[designationCategory="Ferny_Life"
+                    or designationCategory="Ferny_Control"]/designationCategory</xpath>
 
-    <!-- Move remaining subcategories to More -->
-    <Operation Class="PatchOperationConditional">
-        <xpath>Defs/DesignationCategoryDef/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory[text()="Ferny_Life"]</xpath>
+                <match Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[designationCategory="Ferny_Life"
+                        or designationCategory="Ferny_Control"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Misc</designationCategory>
+                    </value>
+                </match>
 
-        <match Class="PatchOperationReplace">
-            <xpath>Defs/DesignationCategoryDef/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory[text()="Ferny_Life"]</xpath>
-            <value>
-                <parentCategory>Misc</parentCategory>
-            </value>
-        </match>
+            </li>
 
-    </Operation>
+            <!-- Move remaining subcategories to More -->
+            <li Class="PatchOperationConditional">
+                <xpath>Defs/DesignationCategoryDef/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory[text()="Ferny_Life"]</xpath>
 
-    <!-- Remove People Category -->
-    <Operation Class="PatchOperationRemove">
-        <xpath>Defs/DesignationCategoryDef[defName="Ferny_Life"]</xpath>
+                <match Class="PatchOperationReplace">
+                    <xpath>Defs/DesignationCategoryDef/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory[text()="Ferny_Life"]</xpath>
+                    <value>
+                        <parentCategory>Misc</parentCategory>
+                    </value>
+                </match>
+
+            </li>
+
+            <!-- Remove People Category -->
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/DesignationCategoryDef[defName="Ferny_Life"]</xpath>
+            </li>
+
+        </operations>
+
     </Operation>
 
 </Patch>

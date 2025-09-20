@@ -1,22 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-    <!-- Move remaining subcategories to Production -->
-    <Operation Class="PatchOperationConditional">
-        <xpath>Defs/DesignationCategoryDef/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory[text()="Ferny_Automation"]</xpath>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <id>RemoveAutomationCategory</id>
+        <defaultValue>True</defaultValue>
+        <label>Remove Automation Category. (Default: True)</label>
+        <tooltip>Remove the Automation Category. In the future, will move factories subcategories to Production.</tooltip>
+        <category>KobeRiddle_AutomationCategory</category>
+        <order>0</order>
 
-        <match Class="PatchOperationReplace">
-            <xpath>Defs/DesignationCategoryDef/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory[text()="Ferny_Automation"]</xpath>
-            <value>
-                <parentCategory>Production</parentCategory>
-            </value>
-        </match>
+        <operations>
+
+            <!-- Move remaining subcategories to Production -->
+            <li Class="PatchOperationConditional">
+                <xpath>Defs/DesignationCategoryDef/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory[text()="Ferny_Automation"]</xpath>
+
+                <match Class="PatchOperationReplace">
+                    <xpath>Defs/DesignationCategoryDef/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory[text()="Ferny_Automation"]</xpath>
+                    <value>
+                        <parentCategory>Production</parentCategory>
+                    </value>
+                </match>
+
+            </li>
+        
+
+            <!-- Move remaining subcategories to Production -->
+            <li Class="PatchOperationConditional">
+                <xpath>Defs/DesignationCategoryDef/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory[text()="Ferny_Life"]</xpath>
+
+                <match Class="PatchOperationReplace">
+                    <xpath>Defs/DesignationCategoryDef/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory[text()="Ferny_Life"]</xpath>
+                    <value>
+                        <parentCategory>Production</parentCategory>
+                    </value>
+                </match>
+
+            </li>
+
+            <!-- Remove Automation Category -->
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/DesignationCategoryDef[defName="Ferny_Automation"]</xpath>
+            </li>
+
+        </operations>
 
     </Operation>
-
-    <!-- Remove Automation Category -->
-    <Operation Class="PatchOperationRemove">
-        <xpath>Defs/DesignationCategoryDef[defName="Ferny_Automation"]</xpath>
-    </Operation>
-
 </Patch>

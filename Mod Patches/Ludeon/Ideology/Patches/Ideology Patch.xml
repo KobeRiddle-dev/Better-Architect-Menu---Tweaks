@@ -2,19 +2,33 @@
 <Patch>
 
     <!-- Move Culture Category -->
-    <Operation Class="PatchOperationReplace">
+    <!-- <Operation Class="PatchOperationReplace">
         <xpath>Defs/DesignationCategoryDef[defName="Ideology"]/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory</xpath>
         <value>
             <parentCategory>Misc</parentCategory>
         </value>
-    </Operation>
+    </Operation> -->
 
-    <!-- Move Memorial things into Culture -->
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[designationCategory="Ferny_Memorial"]/designationCategory</xpath>
-        <value>
-            <designationCategory>Ideology</designationCategory>
-        </value>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <id>RemoveMemorialCategory</id>
+        <defaultValue>True</defaultValue>
+        <label>Remove Memorial Category. (Default: True)</label>
+        <tooltip>Moves everything from Memorial into Culture.</tooltip>
+        <category>KobeRiddle_MoreCategory</category>
+        <order>0</order>
+
+        <operations>
+
+            <!-- Move Memorial things into Culture -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[designationCategory="Ferny_Memorial"]/designationCategory</xpath>
+                <value>
+                    <designationCategory>Ideology</designationCategory>
+                </value>
+            </li>
+
+        </operations>
+
     </Operation>
 
 </Patch>
