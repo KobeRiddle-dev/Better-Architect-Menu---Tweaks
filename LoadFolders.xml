@@ -5,8 +5,6 @@
         
         <li>Category Removals</li> <!-- Remove categories after doing everything else -->
         
-        <li>Area Category</li> <!-- Area Category needs to come after certain other patches -->
-
         <!-- Ludeon -->
         <li>Mod Patches/Ludeon/Core</li>
         <li IfModActive="Ludeon.Rimworld.Ideology">Mod Patches/Ludeon/Ideology</li>
@@ -16,6 +14,7 @@
         <li IfModActive="Dubwise.DubsBadHygiene">Mod Patches/Dubs Bad Hygiene</li>
         <li IfModActive="VanillaExpanded.VFEArchitect">Mod Patches/VFE Architect</li>
         
+        <li>Area Category</li>
         <li>Rename Categories</li>
     </v1.6>
 </loadFolders>
