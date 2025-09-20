@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Move Radiators -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[designationCategory="Ferny_Heating"]/designationCategory</xpath>
+
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[@Name="BaseRadiator"]</xpath>
+            <value>
+                <designationCategory>Ferny_Heating</designationCategory>
+            </value>
+        </match>
+
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[@Name="BaseRadiator"]</xpath>
+            <value>
+                <designationCategory>Ferny_AirManagement</designationCategory>
+            </value>
+        </nomatch>
+
+    </Operation>
+
+</Patch>

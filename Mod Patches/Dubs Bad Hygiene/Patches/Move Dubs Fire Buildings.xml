@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+
+    <!-- Move Fire Sprinkler -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="FireSprinkler"]</xpath>
+        <value>
+            <designationCategory>Ferny_Firefoam</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Rename Firefoam Category -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/DesignationCategoryDef[defName="Ferny_Firefoam"]/label</xpath>
+        <value>
+            <label>Fire Suppression</label>
+        </value>
+    </Operation>
+    
+</Patch>
