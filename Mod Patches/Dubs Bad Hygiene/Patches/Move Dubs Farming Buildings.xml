@@ -13,15 +13,7 @@
 
             <!-- Move Biosolids Composter -->
             <li Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName="BiosolidsComposter"]</xpath>
-                <value>
-                    <designationCategory>Ferny_Farming</designationCategory>
-                </value>
-            </li>
-
-            <!-- Move Irrigation Sprinkler -->
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[defName="IrrigationSprinkler"]/designationCategory</xpath>
+                <xpath>Defs/ThingDef[defName="BiosolidsComposter" or defName="IrrigationSprinkler"]</xpath>
                 <value>
                     <designationCategory>Ferny_Farming</designationCategory>
                 </value>
