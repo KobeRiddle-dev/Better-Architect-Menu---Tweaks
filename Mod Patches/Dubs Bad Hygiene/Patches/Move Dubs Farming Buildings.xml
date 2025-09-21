@@ -1,12 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-    <!-- Move Biosolids Composter -->
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="BiosolidsComposter"]</xpath>
-        <value>
-            <designationCategory>Ferny_Farming</designationCategory>
-        </value>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <id>MoveDubsFarmingBuildings</id>
+        <defaultValue>True</defaultValue>
+        <label>Move Farming buildings to Farming. (Default: True)</label>
+        <tooltip>Moves Biosolids Composter and Irrigation Sprinkler to Production/Farming.</tooltip>
+        <category>KobeRiddle_WaterCategory</category>
+        <order>1</order>
+
+        <operations>
+
+            <!-- Move Biosolids Composter -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="BiosolidsComposter"]</xpath>
+                <value>
+                    <designationCategory>Ferny_Farming</designationCategory>
+                </value>
+            </li>
+
+            <!-- Move Irrigation Sprinkler -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="IrrigationSprinkler"]/designationCategory</xpath>
+                <value>
+                    <designationCategory>Ferny_Farming</designationCategory>
+                </value>
+            </li>
+
+        </operations>
+
     </Operation>
 
 </Patch>

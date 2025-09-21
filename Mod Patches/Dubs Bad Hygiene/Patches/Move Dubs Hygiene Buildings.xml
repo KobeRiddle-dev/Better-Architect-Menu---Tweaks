@@ -1,36 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-    <!-- Move Toilets -->
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="PitLatrine" or @Name="DubsDirtyTerletBase"]</xpath>
-        <value>
-            <designationCategory>KobeRiddle_Hygiene</designationCategory>
-        </value>
-    </Operation>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <id>MoveDubsHygieneBuildings</id>
+        <defaultValue>True</defaultValue>
+        <label>Move bathroom fixtures to Furniture. (Default: True)</label>
+        <tooltip>Moves Toilets, Showers, Baths, Stall Doors, Sinks, and Bath Mats to a new Furniture subcategory called "Hygiene".</tooltip>
+        <category>KobeRiddle_WaterCategory</category>
+        <order>3</order>
 
-    <!-- Move Showers and Baths -->
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[@Name="DubsDirtyShowerBase" or defName="BathMat" or @Name="DubsDirtyBathtubBase"]</xpath>
-        <value>
-            <designationCategory>KobeRiddle_Hygiene</designationCategory>
-        </value>
-    </Operation>
+        <operations>
 
-    <!-- Move Stall Door -->
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="ToiletStallDoor"]</xpath>
-        <value>
-            <designationCategory>KobeRiddle_Hygiene</designationCategory>
-        </value>
-    </Operation>
+            <!-- Move Toilets -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="PitLatrine" or @Name="DubsDirtyTerletBase"]</xpath>
+                <value>
+                    <designationCategory>KobeRiddle_Hygiene</designationCategory>
+                </value>
+            </li>
 
-    <!-- Move Sinks -->
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="WashBucket" or @Name="DubsDirtyBasinBase"]</xpath>
-        <value>
-            <designationCategory>KobeRiddle_Hygiene</designationCategory>
-        </value>
+            <!-- Move Showers and Baths -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[@Name="DubsDirtyShowerBase" or defName="BathMat" or @Name="DubsDirtyBathtubBase"]</xpath>
+                <value>
+                    <designationCategory>KobeRiddle_Hygiene</designationCategory>
+                </value>
+            </li>
+
+            <!-- Move Stall Door -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="ToiletStallDoor"]</xpath>
+                <value>
+                    <designationCategory>KobeRiddle_Hygiene</designationCategory>
+                </value>
+            </li>
+
+            <!-- Move Sinks -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="WashBucket" or @Name="DubsDirtyBasinBase"]</xpath>
+                <value>
+                    <designationCategory>KobeRiddle_Hygiene</designationCategory>
+                </value>
+            </li>
+
+        </operations>
+
     </Operation>
 
 </Patch>

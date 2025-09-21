@@ -1,20 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-    <!-- Move Animal Water -->
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="WaterTrough" or defName="PetWaterBowl"]</xpath>
-        <value>
-            <designationCategory>Ferny_Ranching</designationCategory>
-        </value>
-    </Operation>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <id>MoveDubsAnimalBuildings</id>
+        <defaultValue>True</defaultValue>
+        <label>Move Animal buildings to Animals. (Default: True)</label>
+        <tooltip>Moves Water Trough, Pet Water Bowl, and Litter Box to Animals/Ranching.</tooltip>
+        <category>KobeRiddle_WaterCategory</category>
+        <order>0</order>
 
-    <!-- Move Litter Box -->
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="LitterBox"]</xpath>
-        <value>
-            <designationCategory>Ferny_Ranching</designationCategory>
-        </value>
+        <operations>
+
+            <!-- Move Animal Water -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="WaterTrough" or defName="PetWaterBowl"]</xpath>
+                <value>
+                    <designationCategory>Ferny_Ranching</designationCategory>
+                </value>
+            </li>
+
+            <!-- Move Litter Box -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="LitterBox"]</xpath>
+                <value>
+                    <designationCategory>Ferny_Ranching</designationCategory>
+                </value>
+            </li>
+
+        </operations>
+
     </Operation>
 
 </Patch>

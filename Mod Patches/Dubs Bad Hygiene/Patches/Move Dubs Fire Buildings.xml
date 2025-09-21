@@ -1,21 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <id>MoveDubsFireBuildings</id>
+        <defaultValue>True</defaultValue>
+        <label>Move Fire Sprinkler to Area. (Default: True)</label>
+        <tooltip>Moves Fire Sprinkler to Area/Firefoam (and rename it to "Fire Suppression").</tooltip>
+        <category>KobeRiddle_WaterCategory</category>
+        <order>2</order>
 
-    <!-- Move Fire Sprinkler -->
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="FireSprinkler"]</xpath>
-        <value>
-            <designationCategory>Ferny_Firefoam</designationCategory>
-        </value>
+        <operations>
+
+            <!-- Move Fire Sprinkler -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="FireSprinkler"]</xpath>
+                <value>
+                    <designationCategory>Ferny_Firefoam</designationCategory>
+                </value>
+            </li>
+
+            <!-- Rename Firefoam Category -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/DesignationCategoryDef[defName="Ferny_Firefoam"]/label</xpath>
+                <value>
+                    <label>Fire Suppression</label>
+                </value>
+            </li>
+
+        </operations>
+
     </Operation>
 
-    <!-- Rename Firefoam Category -->
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/DesignationCategoryDef[defName="Ferny_Firefoam"]/label</xpath>
-        <value>
-            <label>Fire Suppression</label>
-        </value>
-    </Operation>
-    
 </Patch>

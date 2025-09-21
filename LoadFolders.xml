@@ -2,15 +2,15 @@
 <loadFolders>
     <v1.6>
         <li>/</li>
-        
+
         <li>Category Removals</li> <!-- Remove categories after doing everything else -->
-        
+
         <!-- Ludeon -->
         <li>Mod Patches/Ludeon/Core</li>
         <li IfModActive="Ludeon.Rimworld.Ideology">Mod Patches/Ludeon/Ideology</li>
         <li IfModActive="Ludeon.Rimworld.Biotech">Mod Patches/Ludeon/Biotech</li>
         <li IfModActive="Ludeon.Rimworld.Anomaly">Mod Patches/Ludeon/Anomaly</li>
-        
+
         <li IfModActiveAll="Dubwise.DubsBadHygiene,VanillaExpanded.VChemfuelE">Mod Patches/Dubs Bad Hygiene</li>
         <li IfModActive="VanillaExpanded.VFEArchitect">Mod Patches/VFE Architect</li>
         <li IfModActive="VanillaExpanded.VChemfuelE">Mod Patches/VE Chemfuel</li>

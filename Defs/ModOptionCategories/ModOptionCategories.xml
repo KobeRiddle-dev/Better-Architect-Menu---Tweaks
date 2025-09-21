@@ -37,15 +37,21 @@
     </ModSettingsFramework.ModOptionCategoryDef>
 
     <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
+        <defName>KobeRiddle_WaterCategory</defName>
+        <label>Water Category</label>
+        <order>5</order>
+    </ModSettingsFramework.ModOptionCategoryDef>
+
+    <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
         <defName>KobeRiddle_WorldCategory</defName>
         <label>World Category</label>
-        <order>5</order>
+        <order>6</order>
     </ModSettingsFramework.ModOptionCategoryDef>
 
     <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
         <defName>KobeRiddle_MoreCategory</defName>
         <label>More Category</label>
-        <order>6</order>
+        <order>7</order>
     </ModSettingsFramework.ModOptionCategoryDef>
 
 </Defs>
