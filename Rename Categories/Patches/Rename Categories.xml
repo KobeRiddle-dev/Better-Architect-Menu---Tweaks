@@ -21,7 +21,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/DesignationCategoryDef[defName="Ferny_Hosting"]/label</xpath>
         <value>
-            <label>Entertainment</label>
+            <label>Leisure</label>
         </value>
     </Operation>
 
