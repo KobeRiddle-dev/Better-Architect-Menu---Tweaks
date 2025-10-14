@@ -5,7 +5,7 @@
         <id>CombineTemperatureSubcategories</id>
         <defaultValue>True</defaultValue>
         <label>Combine Temperature Subcategories. (Default: True)</label>
-        <tooltip>Combines Heating and Cooling into Airflow, and renames it to Temperature.</tooltip>
+        <tooltip>Combines Heating, Cooling, and Airflow into a new Temperature subcategory.</tooltip>
         <category>KobeRiddle_AreaCategory</category>
         <order>000</order>
 
