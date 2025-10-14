@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-    <!-- Automate > Automation -->
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/DesignationCategoryDef[defName="Ferny_Automation"]/label</xpath>
-        <value>
-            <label>Automation</label>
-        </value>
-    </Operation>
-
     <!-- Build > Structure -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/DesignationCategoryDef[defName="Structure"]/label</xpath>

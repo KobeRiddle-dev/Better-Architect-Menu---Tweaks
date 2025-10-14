@@ -7,13 +7,13 @@
         <label>Combine Temperature Subcategories. (Default: True)</label>
         <tooltip>Combines Heating and Cooling into Airflow, and renames it to Temperature.</tooltip>
         <category>KobeRiddle_AreaCategory</category>
-        <order>0</order>
+        <order>000</order>
 
         <operations>
 
             <!-- Move everything in Heating, Cooling, and Airflow to a new Temperature Category -->
             <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[designationCategory="Ferny_Heating" or designationCategory="Ferny_Cooling" or designationCategory="Ferny_Temperature"]/designationCategory</xpath>
+                <xpath>Defs/ThingDef[designationCategory="Ferny_Heating" or designationCategory="Ferny_Cooling" or designationCategory="Ferny_AirManagement"]/designationCategory</xpath>
                 <value>
                     <designationCategory>Ferny_Temperature</designationCategory>
                 </value>

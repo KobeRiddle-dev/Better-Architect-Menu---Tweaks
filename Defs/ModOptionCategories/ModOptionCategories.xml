@@ -9,13 +9,13 @@
     <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
         <defName>KobeRiddle_AnimalCategory</defName>
         <label>Animal Category</label>
-        <order>0</order>
+        <order>000</order>
     </ModSettingsFramework.ModOptionCategoryDef>
 
     <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
         <defName>KobeRiddle_AreaCategory</defName>
         <label>Area Category</label>
-        <order>1</order>
+        <order>100</order>
     </ModSettingsFramework.ModOptionCategoryDef>
 
     <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">

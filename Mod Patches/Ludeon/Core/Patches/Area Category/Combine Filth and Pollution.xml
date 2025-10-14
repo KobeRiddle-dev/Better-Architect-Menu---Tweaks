@@ -7,7 +7,7 @@
         <label>Combine Filth and Pollution. (Default: True)</label>
         <tooltip>Moves everything from Area/Filth into Area/Pollution.</tooltip>
         <category>KobeRiddle_AreaCategory</category>
-        <order>1</order>
+        <order>100</order>
 
         <operations>
 

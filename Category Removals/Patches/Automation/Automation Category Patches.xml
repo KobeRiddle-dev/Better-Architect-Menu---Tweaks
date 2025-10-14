@@ -2,28 +2,37 @@
 <Patch>
 
     <Operation Class="ModSettingsFramework.PatchOperationModOption">
-        <id>RemoveAutomationCategory</id>
+        <id>Rename AutomationCategory</id>
         <defaultValue>True</defaultValue>
-        <label>Remove Automation Category. (Default: True)</label>
-        <tooltip>Remove the Automation Category. In the future, will move factories subcategories to Production.</tooltip>
+        <label>Rename the Automate Category to Automation. (Default: True)</label>
+        <tooltip>Rem.</tooltip>
         <category>KobeRiddle_AutomationCategory</category>
-        <order>0</order>
+        <order>000</order>
 
         <operations>
 
-            <!-- Move remaining subcategories to Production -->
-            <li Class="PatchOperationConditional">
-                <xpath>Defs/DesignationCategoryDef/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory[text()="Ferny_Automation"]</xpath>
-
-                <match Class="PatchOperationReplace">
-                    <xpath>Defs/DesignationCategoryDef/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory[text()="Ferny_Automation"]</xpath>
-                    <value>
-                        <parentCategory>Production</parentCategory>
-                    </value>
-                </match>
-
+            <!-- Automate > Automation -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/DesignationCategoryDef[defName="Ferny_Automation"]/label</xpath>
+                <value>
+                    <label>Automation</label>
+                </value>
             </li>
-        
+
+        </operations>
+
+    </Operation>
+
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <id>RemoveAutomationCategory</id>
+        <defaultValue>True</defaultValue>
+        <label>Remove Automation Category. (Default: True)</label>
+        <tooltip>Remove the Automation Category. Move remaining subcategories to Production.</tooltip>
+        <category>KobeRiddle_AutomationCategory</category>
+        <order>100</order>
+
+        <operations>
+
 
             <!-- Move remaining subcategories to Production -->
             <li Class="PatchOperationConditional">

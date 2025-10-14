@@ -5,7 +5,7 @@
         <defName>Ferny_Temperature</defName>
         <label>Temperature</label>
         <description>Manage temperature.</description>
-        <order>000</order>
+        <order>-100</order>
         <specialDesignatorClasses>
             <li>Designator_Cancel</li>
             <li>Designator_Deconstruct</li>
