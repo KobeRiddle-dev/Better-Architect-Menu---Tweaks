@@ -2,10 +2,10 @@
 <Patch>
 
     <Operation Class="ModSettingsFramework.PatchOperationModOption">
-        <id>Rename AutomationCategory</id>
+        <id>RenameAutomationCategory</id>
         <defaultValue>True</defaultValue>
-        <label>Rename the Automate Category to Automation. (Default: True)</label>
-        <tooltip>Rem.</tooltip>
+        <label>Rename to Automation. (Default: True)</label>
+        <tooltip>Rename the Automate Category to Automation.</tooltip>
         <category>KobeRiddle_AutomationCategory</category>
         <order>000</order>
 
