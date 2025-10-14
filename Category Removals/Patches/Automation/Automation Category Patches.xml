@@ -35,7 +35,7 @@
 
             <!-- Move remaining things to Production -->
             <li Class="PatchOperationConditional">
-                <xpath>Defs/ThingDef[designationCategory="Ferny_Automation"/designationCategory</xpath>
+                <xpath>Defs/ThingDef[designationCategory="Ferny_Automation"]</xpath>
 
                 <match Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[designationCategory="Ferny_Automation"/designationCategory</xpath>
