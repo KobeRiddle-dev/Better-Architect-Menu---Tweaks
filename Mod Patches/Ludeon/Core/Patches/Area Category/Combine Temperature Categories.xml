@@ -11,19 +11,11 @@
 
         <operations>
 
-            <!-- Move everything in Heating & Cooling to Airflow -->
+            <!-- Move everything in Heating, Cooling, and Airflow to a new Temperature Category -->
             <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[designationCategory="Ferny_Heating" or designationCategory="Ferny_Cooling"]/designationCategory</xpath>
+                <xpath>Defs/ThingDef[designationCategory="Ferny_Heating" or designationCategory="Ferny_Cooling" or designationCategory="Ferny_Temperature"]/designationCategory</xpath>
                 <value>
-                    <designationCategory>Ferny_AirManagement</designationCategory>
-                </value>
-            </li>
-
-            <!-- Rename Airflow to Temperature -->
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/DesignationCategoryDef[defName="Ferny_AirManagement"]/label</xpath>
-                <value>
-                    <label>Temperature</label>
+                    <designationCategory>Ferny_Temperature</designationCategory>
                 </value>
             </li>
 

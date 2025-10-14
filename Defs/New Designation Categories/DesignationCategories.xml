@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <DesignationCategoryDef>
+        <defName>Ferny_Temperature</defName>
+        <label>Temperature</label>
+        <description>Manage temperature.</description>
+        <order>000</order>
+        <specialDesignatorClasses>
+            <li>Designator_Cancel</li>
+            <li>Designator_Deconstruct</li>
+        </specialDesignatorClasses>
+        <modExtensions>
+            <li Class="BetterArchitect.NestedCategoryExtension">
+                <parentCategory>Temperature</parentCategory>
+            </li>
+        </modExtensions>
+    </DesignationCategoryDef>
+
+</Defs>
