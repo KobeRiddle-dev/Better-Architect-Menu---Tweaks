@@ -13,7 +13,7 @@
 
             <!-- Move Bedding -->
             <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[@ParentName="AnimalBedFurnitureBase" or defName="AnimalSleepingSpot"]/designationCategory</xpath>
+                <xpath>Defs/ThingDef[designationCategory="Ferny_AnimalBedding"]/designationCategory</xpath>
                 <value>
                     <designationCategory>Ferny_Ranching</designationCategory>
                 </value>
