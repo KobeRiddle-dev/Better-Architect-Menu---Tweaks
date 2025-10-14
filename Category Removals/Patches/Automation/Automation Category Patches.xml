@@ -33,6 +33,19 @@
 
         <operations>
 
+            <!-- Move remaining things to Production -->
+            <li Class="PatchOperationConditional">
+                <xpath>Defs/ThingDef[designationCategory="Ferny_Automation"/designationCategory</xpath>
+
+                <match Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[designationCategory="Ferny_Automation"/designationCategory</xpath>
+
+                    <value>
+                        <designationCategory>Production</designationCategory>
+                    </value>
+                </match>
+
+            </li>
 
             <!-- Move remaining subcategories to Production -->
             <li Class="PatchOperationConditional">
