@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Manage > Management -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/DesignationCategoryDef[defName="Ferny_Colony"]/label</xpath>
+        <value>
+            <label>Management</label>
+        </value>
+    </Operation>
+
+</Patch>

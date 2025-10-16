@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Make > Production -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/DesignationCategoryDef[defName="Production"]/label</xpath>
+        <value>
+            <label>Production</label>
+        </value>
+    </Operation>
+
+    <!-- Produce > Crafting -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/DesignationCategoryDef[defName="Ferny_Production"]/label</xpath>
+        <value>
+            <label>Crafting</label>
+        </value>
+    </Operation>
+
+    <!-- Process > Processing -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/DesignationCategoryDef[defName="Ferny_ProcessingProduction"]/label</xpath>
+        <value>
+            <label>Processing</label>
+        </value>
+    </Operation>
+
+</Patch>

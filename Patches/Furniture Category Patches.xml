@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Furnish > Furniture -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/DesignationCategoryDef[defName="Furniture"]/label</xpath>
+        <value>
+            <label>Furniture</label>
+        </value>
+    </Operation>
+
+</Patch>
