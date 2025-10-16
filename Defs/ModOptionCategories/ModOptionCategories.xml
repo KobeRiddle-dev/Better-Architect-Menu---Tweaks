@@ -21,37 +21,37 @@
     <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
         <defName>KobeRiddle_AutomationCategory</defName>
         <label>Automation Category</label>
-        <order>2</order>
+        <order>200</order>
     </ModSettingsFramework.ModOptionCategoryDef>
 
     <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
         <defName>KobeRiddle_PeopleCategory</defName>
         <label>People Category</label>
-        <order>3</order>
+        <order>300</order>
     </ModSettingsFramework.ModOptionCategoryDef>
 
     <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
         <defName>KobeRiddle_ResourcesCategory</defName>
         <label>Resources Category</label>
-        <order>4</order>
+        <order>400</order>
     </ModSettingsFramework.ModOptionCategoryDef>
 
     <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
         <defName>KobeRiddle_WaterCategory</defName>
         <label>Water Category</label>
-        <order>5</order>
+        <order>500</order>
     </ModSettingsFramework.ModOptionCategoryDef>
 
     <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
         <defName>KobeRiddle_WorldCategory</defName>
         <label>World Category</label>
-        <order>6</order>
+        <order>600</order>
     </ModSettingsFramework.ModOptionCategoryDef>
 
     <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
         <defName>KobeRiddle_MoreCategory</defName>
         <label>More Category</label>
-        <order>7</order>
+        <order>700</order>
     </ModSettingsFramework.ModOptionCategoryDef>
 
 </Defs>

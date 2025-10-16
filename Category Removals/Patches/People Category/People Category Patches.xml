@@ -2,12 +2,31 @@
 <Patch>
 
     <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <id>RenamePeopleCategory</id>
+        <defaultValue>True</defaultValue>
+        <label>Rename People to Society. (Default: True)</label>
+        <tooltip>Rename the People Category to Society.</tooltip>
+        <category>KobeRiddle_PeopleCategory</category>
+        <order>000</order>
+
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/DesignationCategoryDef[defName="Ferny_Life"]/label</xpath>
+                <value>
+                    <label>Society</label>
+                </value>
+            </li>
+        </operations>
+
+    </Operation>
+
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
         <id>RemovePeopleCategory</id>
         <defaultValue>True</defaultValue>
         <label>Remove People Category. (Default: True)</label>
         <tooltip>Remove the People Category and move all remaining subcategories and Other items into More.</tooltip>
         <category>KobeRiddle_PeopleCategory</category>
-        <order>000</order>
+        <order>100</order>
 
         <operations>
 
