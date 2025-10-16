@@ -73,20 +73,4 @@
         </value>
     </Operation>
 
-    <!-- Aerial > Air -->
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/DesignationCategoryDef[defName="Ferny_AerialTransport"]/label</xpath>
-        <value>
-            <label>Air</label>
-        </value>
-    </Operation>
-
-    <!-- Naval > Sea -->
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/DesignationCategoryDef[defName="Ferny_NavalTransport"]/label</xpath>
-        <value>
-            <label>Sea</label>
-        </value>
-    </Operation>
-
 </Patch>
