@@ -25,7 +25,31 @@
     </ModSettingsFramework.ModOptionCategoryDef>
 
     <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
+        <defName>KobeRiddle_FurnitureCategory</defName>
+        <label>Automation Category</label>
+        <order>200</order>
+    </ModSettingsFramework.ModOptionCategoryDef>
+
+    <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
+        <defName>KobeRiddle_LeisureCategory</defName>
+        <label>Leisure Category</label>
+        <order>200</order>
+    </ModSettingsFramework.ModOptionCategoryDef>
+
+    <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
+        <defName>KobeRiddle_ManagementCategory</defName>
+        <label>Management Category</label>
+        <order>200</order>
+    </ModSettingsFramework.ModOptionCategoryDef>
+
+    <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
         <defName>KobeRiddle_PeopleCategory</defName>
+        <label>People Category</label>
+        <order>300</order>
+    </ModSettingsFramework.ModOptionCategoryDef>
+
+    <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
+        <defName>KobeRiddle_ProductionCategory</defName>
         <label>People Category</label>
         <order>300</order>
     </ModSettingsFramework.ModOptionCategoryDef>
@@ -39,6 +63,30 @@
     <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
         <defName>KobeRiddle_WaterCategory</defName>
         <label>Water Category</label>
+        <order>500</order>
+    </ModSettingsFramework.ModOptionCategoryDef>
+
+    <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
+        <defName>KobeRiddle_SecurityCategory</defName>
+        <label>Security Category</label>
+        <order>500</order>
+    </ModSettingsFramework.ModOptionCategoryDef>
+
+    <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
+        <defName>KobeRiddle_StorageCategory</defName>
+        <label>Storage Category</label>
+        <order>500</order>
+    </ModSettingsFramework.ModOptionCategoryDef>
+
+    <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
+        <defName>KobeRiddle_StructureCategory</defName>
+        <label>Security Category</label>
+        <order>500</order>
+    </ModSettingsFramework.ModOptionCategoryDef>
+
+    <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
+        <defName>KobeRiddle_TransportCategory</defName>
+        <label>Security Category</label>
         <order>500</order>
     </ModSettingsFramework.ModOptionCategoryDef>
 

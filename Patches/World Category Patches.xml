@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
+    <!-- 
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <id>RemoveOutreachCategory</id>
+        <defaultValue>True</defaultValue>
+        <label>Rename to Management. (Default: True)</label>
+        <tooltip>Rename the Manage Category to Management.</tooltip>
+        <category>KobeRiddle_WorldCategory</category>
+        <order>000</order>
+
+        <operations>
+
+             Move Outreach Category 
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/DesignationCategoryDef[defName="Ferny_Outreach"]/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory</xpath>
+                <value>
+                    <parentCategory>Misc</parentCategory>
+                </value>
+            </li>
+
+        </operations>
+
+    </Operation> 
+    -->
+
     <Operation Class="ModSettingsFramework.PatchOperationModOption">
         <id>RemoveWorldCategory</id>
         <defaultValue>True</defaultValue>
@@ -19,6 +43,18 @@
                     <xpath>Defs/ThingDef[designationCategory="Ferny_World"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Misc</designationCategory>
+                    </value>
+                </match>
+            </li>
+
+            <!-- Move summon category things to Outreach -->
+            <li Class="PatchOperationConditional">
+                <xpath>Defs/ThingDef[designationCategory="Ferny_Summon"]/designationCategory</xpath>
+
+                <match Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[designationCategory="Ferny_Summon"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Outreach</designationCategory>
                     </value>
                 </match>
             </li>
