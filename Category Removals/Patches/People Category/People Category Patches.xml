@@ -22,8 +22,8 @@
 
     <Operation Class="ModSettingsFramework.PatchOperationModOption">
         <id>RemovePeopleCategory</id>
-        <defaultValue>True</defaultValue>
-        <label>Remove People Category. (Default: True)</label>
+        <defaultValue>False</defaultValue>
+        <label>Remove People Category. (Default: False)</label>
         <tooltip>Remove the People Category and move all remaining subcategories and Other items into More.</tooltip>
         <category>KobeRiddle_PeopleCategory</category>
         <order>100</order>
