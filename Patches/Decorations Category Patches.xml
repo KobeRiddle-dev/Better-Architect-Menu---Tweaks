@@ -24,7 +24,7 @@
         <id>MoveDecorateCategory</id>
         <defaultValue>True</defaultValue>
         <label>Move Decorate Category to Furniture. (Default: True)</label>
-        <tooltip>Remove the Decorate Category and items in it and its subcategories to Furniture.</tooltip>
+        <tooltip> Move all items in all subcategories of Decorate into Decorate itself, and move Decorate under Furniture.</tooltip>
         <category>KobeRiddle_DecorationsCategory</category>
         <order>100</order>
 
