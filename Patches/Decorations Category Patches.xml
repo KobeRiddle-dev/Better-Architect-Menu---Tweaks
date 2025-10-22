@@ -32,18 +32,18 @@
 
             <!-- Move all things in subcategories to Decorate -->
             <li Class="PatchOperationConditional">
-                <xpath>Defs/ThingDef[designationCategory="Ferny_DecoPlants" 
-                    or designationCategory="Ferny_DecoRugs" 
-                    or designationCategory="Ferny_DecoHanging" 
-                    or designationCategory="Ferny_DecoArt" 
+                <xpath>Defs/ThingDef[designationCategory="Ferny_DecoPlants"
+                    or designationCategory="Ferny_DecoRugs"
+                    or designationCategory="Ferny_DecoHanging"
+                    or designationCategory="Ferny_DecoArt"
                     or designationCategory="Ferny_DecoOutdoor"]/designationCategory</xpath>
 
                 <match Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[designationCategory="Ferny_DecoPlants" 
-                    or designationCategory="Ferny_DecoRugs" 
-                    or designationCategory="Ferny_DecoHanging" 
-                    or designationCategory="Ferny_DecoArt" 
-                    or designationCategory="Ferny_DecoOutdoor"]/designationCategory</xpath>
+                    <xpath>Defs/ThingDef[designationCategory="Ferny_DecoPlants"
+                        or designationCategory="Ferny_DecoRugs"
+                        or designationCategory="Ferny_DecoHanging"
+                        or designationCategory="Ferny_DecoArt"
+                        or designationCategory="Ferny_DecoOutdoor"]/designationCategory</xpath>
 
                     <value>
                         <designationCategory>Ferny_Decorations</designationCategory>
