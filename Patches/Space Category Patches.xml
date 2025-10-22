@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <id>MoveSpaceCategory</id>
+        <defaultValue>False</defaultValue>
+        <label>Move Space Category to Transport. (Default: False)</label>
+        <tooltip>Move all items in all subcategories of Space into Space itself or Platform, rename Platform to Orbital, and move Space and Orbital into Transport. \nRecommended for those not using Vanilla Gravship Expanded.</tooltip>
+        <category>KobeRiddle_SpaceCategory</category>
+        <order>000</order>
+
+        <operations>
+
+            <!-- Move all gravship things in subcategories to Platform -->
+            <li Class="PatchOperationConditional">
+                <xpath>Defs/ThingDef[designationCategory="Ferny_SpaceFurniture"
+                    or designationCategory="Ferny_SpaceProduction"
+                    or designationCategory="Ferny_SpaceCombat"
+                    or designationCategory="Ferny_SpaceVacuum"
+                    or designationCategory="Ferny_SpacePower"]/designationCategory</xpath>
+
+                <match Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[designationCategory="Ferny_SpaceFurniture"
+                        or designationCategory="Ferny_SpaceProduction"
+                        or designationCategory="Ferny_SpaceCombat"
+                        or designationCategory="Ferny_SpaceVacuum"
+                        or designationCategory="Ferny_SpacePower"]/designationCategory</xpath>
+
+                    <value>
+                        <designationCategory>Ferny_SpacePlatform</designationCategory>
+                    </value>
+                </match>
+
+            </li>
+
+            <!-- Rename Platform to Orbital -->
+            <li Class="PathOperationReplace">
+                <xpath>Defs/DesignationCategoryDef[defName="Ferny_SpacePlatform"]/label</xpath>
+                <value>
+                    <label>Orbital</label>
+                </value>
+            </li>
+
+            <!-- Move Orbital and Space to Transport -->
+            <li Class="PatchOperationConditional">
+                <xpath>Defs/DesignationCategoryDef/[defName="Ferny_SpacePlatform" or defName="Ship"]/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory</xpath>
+
+                <match Class="PatchOperationReplace">
+                <xpath>Defs/DesignationCategoryDef/[defName="Ferny_SpacePlatform" or defName="Ship"]/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory</xpath>
+                    <value>
+                        <parentCategory>Ferny_Transport</parentCategory>
+                    </value>
+                </match>
+
+            </li>
+
+        </operations>
+
+    </Operation>
+
+</Patch>

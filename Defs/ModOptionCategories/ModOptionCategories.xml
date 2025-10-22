@@ -79,33 +79,39 @@
     </ModSettingsFramework.ModOptionCategoryDef>
 
     <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
-        <defName>KobeRiddle_StorageCategory</defName>
-        <label>Storage Category</label>
+        <defName>KobeRiddle_SpaceCategory</defName>
+        <label>Space Category</label>
         <order>1200</order>
     </ModSettingsFramework.ModOptionCategoryDef>
 
     <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
-        <defName>KobeRiddle_StructureCategory</defName>
-        <label>Security Category</label>
+        <defName>KobeRiddle_StorageCategory</defName>
+        <label>Storage Category</label>
         <order>1300</order>
     </ModSettingsFramework.ModOptionCategoryDef>
 
     <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
-        <defName>KobeRiddle_TransportCategory</defName>
-        <label>Security Category</label>
+        <defName>KobeRiddle_StructureCategory</defName>
+        <label>Structure Category</label>
         <order>1400</order>
+    </ModSettingsFramework.ModOptionCategoryDef>
+
+    <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
+        <defName>KobeRiddle_TransportCategory</defName>
+        <label>Transport Category</label>
+        <order>1500</order>
     </ModSettingsFramework.ModOptionCategoryDef>
 
     <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
         <defName>KobeRiddle_WorldCategory</defName>
         <label>World Category</label>
-        <order>1500</order>
+        <order>1600</order>
     </ModSettingsFramework.ModOptionCategoryDef>
 
     <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
         <defName>KobeRiddle_MoreCategory</defName>
         <label>More Category</label>
-        <order>1600</order>
+        <order>1700</order>
     </ModSettingsFramework.ModOptionCategoryDef>
 
 </Defs>
