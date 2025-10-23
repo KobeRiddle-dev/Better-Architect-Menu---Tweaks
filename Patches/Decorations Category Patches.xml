@@ -53,16 +53,14 @@
             </li>
 
             <!-- Move Decorate to Furniture -->
-            <li Class="PatchOperationConditional">
-                <xpath>Defs/DesignationCategoryDef/[defName="Ferny_Decorations"]/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory</xpath>
+            <li Class="PatchOperationAddModExtension">
+                <xpath>Defs/DesignationCategoryDef[defName="Ferny_Decorations"]</xpath>
 
-                <match Class="PatchOperationReplace">
-                    <xpath>Defs/DesignationCategoryDef/[defName="Ferny_Decorations"]/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory</xpath>
-                    <value>
+                <value>
+                    <li Class="BetterArchitect.NestedCategoryExtension">
                         <parentCategory>Furniture</parentCategory>
-                    </value>
-                </match>
-
+                    </li>
+                </value>
             </li>
 
         </operations>
