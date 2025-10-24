@@ -18,7 +18,7 @@
                     or designationCategory="Ferny_SpaceCombat"
                     or designationCategory="Ferny_SpaceVacuum"
                     or designationCategory="Ferny_SpacePower"
-                        or designationCategory="Odyssey"]/designationCategory</xpath>
+                    or designationCategory="Odyssey"]/designationCategory</xpath>
 
                 <match Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[designationCategory="Ferny_SpaceFurniture"
@@ -60,12 +60,24 @@
                 </value>
             </li>
 
-            <!-- Move Orbital, Interstellar, and Vehicle Storage to Transport -->
+            <!-- Move Orbital and Vehicle Storage to Transport -->
             <li Class="PatchOperationReplace">
-                    <xpath>Defs/DesignationCategoryDef[defName="Ferny_SpacePlatform" or defName="Ferny_VehicleStorage" or defName="Ferny_Space"]/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory</xpath>
-                    <value>
+                <xpath>Defs/DesignationCategoryDef[defName="Ferny_SpacePlatform"
+                    or defName="Ferny_VehicleStorage"]/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory</xpath>
+                <value>
+                    <parentCategory>Ferny_Transport</parentCategory>
+                </value>
+            </li>
+
+            <!-- Move Interstellar to Transport -->
+            <li Class="PatchOperationAddModExtension">
+                <xpath>Defs/DesignationCategoryDef[defName="Ferny_Space"]</xpath>
+
+                <value>
+                    <li Class="BetterArchitect.NestedCategoryExtension">
                         <parentCategory>Ferny_Transport</parentCategory>
-                    </value>
+                    </li>
+                </value>
             </li>
 
         </operations>
