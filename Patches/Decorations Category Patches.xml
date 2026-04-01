@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <id>RenameDecorateCategory</id>
+        <defaultValue>True</defaultValue>
+        <label>Rename Decorate to Decorations. (Default: True)</label>
+        <tooltip>Rename the People Category to Society.</tooltip>
+        <category>KobeRiddle_DecorationsCategory</category>
+        <order>000</order>
+
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/DesignationCategoryDef[defName="Ferny_Decorations"]/label</xpath>
+                <value>
+                    <label>Decorations</label>
+                </value>
+            </li>
+        </operations>
+
+    </Operation>
+
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <id>MoveDecorateCategory</id>
+        <defaultValue>True</defaultValue>
+        <label>Move Decorate Category to Furniture. (Default: True)</label>
+        <tooltip>Move all items in all subcategories of Decorate into Decorate itself, and move Decorate under Furniture.</tooltip>
+        <category>KobeRiddle_DecorationsCategory</category>
+        <order>100</order>
+
+        <operations>
+
+            <!-- Move all things in subcategories to Decorate -->
+            <li Class="PatchOperationConditional">
+                <xpath>Defs/ThingDef[designationCategory="Ferny_DecoPlants"
+                    or designationCategory="Ferny_DecoRugs"
+                    or designationCategory="Ferny_DecoHanging"
+                    or designationCategory="Ferny_DecoArt"
+                    or designationCategory="Ferny_DecoOutdoor"]/designationCategory</xpath>
+
+                <match Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[designationCategory="Ferny_DecoPlants"
+                        or designationCategory="Ferny_DecoRugs"
+                        or designationCategory="Ferny_DecoHanging"
+                        or designationCategory="Ferny_DecoArt"
+                        or designationCategory="Ferny_DecoOutdoor"]/designationCategory</xpath>
+
+                    <value>
+                        <designationCategory>Ferny_Decorations</designationCategory>
+                    </value>
+                </match>
+
+            </li>
+
+            <!-- Move Decorate to Furniture -->
+            <li Class="PatchOperationAddModExtension">
+                <xpath>Defs/DesignationCategoryDef[defName="Ferny_Decorations"]</xpath>
+
+                <value>
+                    <li Class="BetterArchitect.NestedCategoryExtension">
+                        <parentCategory>Furniture</parentCategory>
+                    </li>
+                </value>
+            </li>
+
+        </operations>
+
+    </Operation>
+
+</Patch>

@@ -7,7 +7,7 @@
         <label>Move Animal buildings to Animals. (Default: True)</label>
         <tooltip>Moves Water Trough, Pet Water Bowl, and Litter Box to Animals/Ranching.</tooltip>
         <category>KobeRiddle_WaterCategory</category>
-        <order>0</order>
+        <order>000</order>
 
         <operations>
 

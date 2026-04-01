@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-    <!-- Move Culture Category -->
-    <!-- <Operation Class="PatchOperationReplace">
-        <xpath>Defs/DesignationCategoryDef[defName="Ideology"]/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory</xpath>
-        <value>
-            <parentCategory>Misc</parentCategory>
-        </value>
-    </Operation> -->
-
     <Operation Class="ModSettingsFramework.PatchOperationModOption">
         <id>RemoveMemorialCategory</id>
-        <defaultValue>True</defaultValue>
+        <defaultValue>False</defaultValue>
         <label>Remove Memorial Category. (Default: False)</label>
         <tooltip>Moves everything from Memorial into Culture.</tooltip>
-        <category>KobeRiddle_MoreCategory</category>
-        <order>0</order>
+        <category>KobeRiddle_PeopleCategory</category>
+        <order>000</order>
 
         <operations>
 

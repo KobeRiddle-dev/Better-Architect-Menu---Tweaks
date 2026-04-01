@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Furnish > Furniture -->
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <id>RenameFurnitureCategory</id>
+        <defaultValue>True</defaultValue>
+        <label>Rename to Furniture. (Default: True)</label>
+        <tooltip>Rename the Furnish Category to Furniture.</tooltip>
+        <category>KobeRiddle_FurnitureCategory</category>
+        <order>000</order>
+
+        <operations>
+            
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/DesignationCategoryDef[defName="Furniture"]/label</xpath>
+                <value>
+                    <label>Furniture</label>
+                </value>
+            </li>
+
+        </operations>
+
+    </Operation>
+
+</Patch>

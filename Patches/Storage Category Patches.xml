@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Store > Storage -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/DesignationCategoryDef[defName="Ferny_Storage"]/label</xpath>
+        <value>
+            <label>Storage</label>
+        </value>
+    </Operation>
+
+</Patch>

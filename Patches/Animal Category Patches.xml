@@ -7,13 +7,13 @@
         <label>Remove bedding Category. (Default: True)</label>
         <tooltip>Moves all animal beds into Animals/Ranching.</tooltip>
         <category>KobeRiddle_AnimalCategory</category>
-        <order>0</order>
+        <order>000</order>
 
         <operations>
 
             <!-- Move Bedding -->
             <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[@ParentName="AnimalBedFurnitureBase" or defName="AnimalSleepingSpot"]/designationCategory</xpath>
+                <xpath>Defs/ThingDef[designationCategory="Ferny_AnimalBedding"]/designationCategory</xpath>
                 <value>
                     <designationCategory>Ferny_Ranching</designationCategory>
                 </value>

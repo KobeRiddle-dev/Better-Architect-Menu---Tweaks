@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <id>RemoveWorldCategory</id>
+        <defaultValue>True</defaultValue>
+        <label>Remove World Category. (Default: True)</label>
+        <tooltip>Remove the World Category and move all remaining subcategories and Other items into More.</tooltip>
+        <category>KobeRiddle_WorldCategory</category>
+        <order>000</order>
+
+        <operations>
+
+            <!-- Move remaining things to More -->
+            <li Class="PatchOperationConditional">
+                <xpath>Defs/ThingDef[designationCategory="Ferny_World"]/designationCategory</xpath>
+
+                <match Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[designationCategory="Ferny_World"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Misc</designationCategory>
+                    </value>
+                </match>
+            </li>
+
+            <!-- Move summon category things to Outreach -->
+            <li Class="PatchOperationConditional">
+                <xpath>Defs/ThingDef[designationCategory="Ferny_Summon"]/designationCategory</xpath>
+
+                <match Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[designationCategory="Ferny_Summon"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Outreach</designationCategory>
+                    </value>
+                </match>
+            </li>
+
+            <!-- Move remaining subcategories to More -->
+            <li Class="PatchOperationConditional">
+                <xpath>Defs/DesignationCategoryDef/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory[text()="Ferny_World"]</xpath>
+
+                <match Class="PatchOperationReplace">
+                    <xpath>Defs/DesignationCategoryDef/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory[text()="Ferny_World"]</xpath>
+                    <value>
+                        <parentCategory>Misc</parentCategory>
+                    </value>
+                </match>
+
+            </li>
+
+            <!-- Remove World Category -->
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/DesignationCategoryDef[defName="Ferny_World"]</xpath>
+            </li>
+
+        </operations>
+
+    </Operation>
+
+</Patch>
