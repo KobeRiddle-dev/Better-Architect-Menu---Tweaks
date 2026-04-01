@@ -12,7 +12,7 @@
     <Operation Class="ModSettingsFramework.PatchOperationModOption">
         <id>RemoveMemorialCategory</id>
         <defaultValue>True</defaultValue>
-        <label>Remove Memorial Category. (Default: True)</label>
+        <label>Remove Memorial Category. (Default: False)</label>
         <tooltip>Moves everything from Memorial into Culture.</tooltip>
         <category>KobeRiddle_MoreCategory</category>
         <order>0</order>
