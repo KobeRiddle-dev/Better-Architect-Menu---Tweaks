@@ -1,28 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-    <!-- Make > Production -->
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/DesignationCategoryDef[defName="Production"]/label</xpath>
-        <value>
-            <label>Production</label>
-        </value>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <id>RenameProductionCategory</id>
+        <defaultValue>True</defaultValue>
+        <label>Rename to Production. (Default: True)</label>
+        <tooltip>Rename the Make category to Production.</tooltip>
+        <category>KobeRiddle_ProductionCategory</category>
+        <order>000</order>
+
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/DesignationCategoryDef[defName="Production"]/label</xpath>
+                <value>
+                    <label>Production</label>
+                </value>
+            </li>
+        </operations>
     </Operation>
 
-    <!-- Produce > Crafting -->
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/DesignationCategoryDef[defName="Ferny_Production"]/label</xpath>
-        <value>
-            <label>Crafting</label>
-        </value>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <id>RenameCraftingCategory</id>
+        <defaultValue>True</defaultValue>
+        <label>Rename Produce to Crafting. (Default: True)</label>
+        <tooltip>Rename the Produce subcategory to Crafting.</tooltip>
+        <category>KobeRiddle_ProductionCategory</category>
+        <order>100</order>
+
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/DesignationCategoryDef[defName="Ferny_Production"]/label</xpath>
+                <value>
+                    <label>Crafting</label>
+                </value>
+            </li>
+        </operations>
     </Operation>
 
-    <!-- Process > Processing -->
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/DesignationCategoryDef[defName="Ferny_ProcessingProduction"]/label</xpath>
-        <value>
-            <label>Processing</label>
-        </value>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <id>RenameProcessingCategory</id>
+        <defaultValue>True</defaultValue>
+        <label>Rename Process to Processing. (Default: True)</label>
+        <tooltip>Rename the Process subcategory to Processing.</tooltip>
+        <category>KobeRiddle_ProductionCategory</category>
+        <order>200</order>
+
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/DesignationCategoryDef[defName="Ferny_ProcessingProduction"]/label</xpath>
+                <value>
+                    <label>Processing</label>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <id>RenameKitchenCategory</id>
+        <defaultValue>True</defaultValue>
+        <label>Rename Feed to Kitchen. (Default: True)</label>
+        <tooltip>Rename the Feed subcategory to Kitchen.</tooltip>
+        <category>KobeRiddle_ProductionCategory</category>
+        <order>300</order>
+
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/DesignationCategoryDef[defName="Ferny_Kitchen"]/label</xpath>
+                <value>
+                    <label>Kitchen</label>
+                </value>
+            </li>
+        </operations>
     </Operation>
 
 </Patch>

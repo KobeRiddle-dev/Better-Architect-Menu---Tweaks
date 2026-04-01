@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-    <!-- Build > Structure -->
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/DesignationCategoryDef[defName="Structure"]/label</xpath>
-        <value>
-            <label>Structure</label>
-        </value>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <id>RenameStructureCategory</id>
+        <defaultValue>True</defaultValue>
+        <label>Rename to Structure. (Default: True)</label>
+        <tooltip>Rename the Build category to Structure.</tooltip>
+        <category>KobeRiddle_StructureCategory</category>
+        <order>000</order>
+
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/DesignationCategoryDef[defName="Structure"]/label</xpath>
+                <value>
+                    <label>Structure</label>
+                </value>
+            </li>
+        </operations>
     </Operation>
 
 </Patch>

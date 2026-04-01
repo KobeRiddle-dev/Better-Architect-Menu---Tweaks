@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-    <!-- Store > Storage -->
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/DesignationCategoryDef[defName="Ferny_Storage"]/label</xpath>
-        <value>
-            <label>Storage</label>
-        </value>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <id>RenameStorageCategory</id>
+        <defaultValue>True</defaultValue>
+        <label>Rename to Storage. (Default: True)</label>
+        <tooltip>Rename the Store category to Storage.</tooltip>
+        <category>KobeRiddle_StorageCategory</category>
+        <order>000</order>
+
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/DesignationCategoryDef[defName="Ferny_Storage"]/label</xpath>
+                <value>
+                    <label>Storage</label>
+                </value>
+            </li>
+        </operations>
     </Operation>
 
 </Patch>

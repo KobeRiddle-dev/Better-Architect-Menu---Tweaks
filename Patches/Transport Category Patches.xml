@@ -1,21 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <id>RenameAirCategory</id>
+        <defaultValue>True</defaultValue>
+        <label>Rename Aerial to Air. (Default: True)</label>
+        <tooltip>Rename the Aerial subcategory to Air.</tooltip>
+        <category>KobeRiddle_TransportCategory</category>
+        <order>000</order>
 
-    <!-- Aerial > Air -->
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/DesignationCategoryDef[defName="Ferny_AerialTransport"]/label</xpath>
-        <value>
-            <label>Air</label>
-        </value>
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/DesignationCategoryDef[defName="Ferny_AerialTransport"]/label</xpath>
+                <value>
+                    <label>Air</label>
+                </value>
+            </li>
+        </operations>
     </Operation>
 
-    <!-- Naval > Sea -->
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/DesignationCategoryDef[defName="Ferny_NavalTransport"]/label</xpath>
-        <value>
-            <label>Sea</label>
-        </value>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <id>RenameSeaCategory</id>
+        <defaultValue>True</defaultValue>
+        <label>Rename Naval to Sea. (Default: True)</label>
+        <tooltip>Rename the Naval subcategory to Sea.</tooltip>
+        <category>KobeRiddle_TransportCategory</category>
+        <order>100</order>
+
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/DesignationCategoryDef[defName="Ferny_NavalTransport"]/label</xpath>
+                <value>
+                    <label>Sea</label>
+                </value>
+            </li>
+        </operations>
     </Operation>
 
 </Patch>

@@ -56,7 +56,7 @@
 
     <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
         <defName>KobeRiddle_ProductionCategory</defName>
-        <label>People Category</label>
+        <label>Production Category</label>
         <order>800</order>
     </ModSettingsFramework.ModOptionCategoryDef>
 
