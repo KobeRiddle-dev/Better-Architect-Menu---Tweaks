@@ -22,6 +22,7 @@
         <value>
             <modExtensions>
                 <li Class="BetterArchitect.NestedCategoryExtension">
+                    <!-- Though it is called "VCHE_PipeNetworks, Better Architect Menu also creates the category, so VCHE is not a dependency" -->
                     <parentCategory>VCHE_PipeNetworks</parentCategory>
                 </li>
             </modExtensions>
