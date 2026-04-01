@@ -7,7 +7,7 @@
         <label>Remove Memorial Category. (Default: False)</label>
         <tooltip>Moves everything from Memorial into Culture.</tooltip>
         <category>KobeRiddle_PeopleCategory</category>
-        <order>000</order>
+        <order>300</order>
 
         <operations>
 

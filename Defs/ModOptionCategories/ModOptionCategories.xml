@@ -13,26 +13,26 @@
     </ModSettingsFramework.ModOptionCategoryDef>
 
     <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
-        <defName>KobeRiddle_EnvironmentCategory</defName>
-        <label>Environment Category</label>
-        <order>100</order>
-    </ModSettingsFramework.ModOptionCategoryDef>
-
-    <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
         <defName>KobeRiddle_AutomationCategory</defName>
         <label>Automation Category</label>
-        <order>200</order>
+        <order>100</order>
     </ModSettingsFramework.ModOptionCategoryDef>
 
     <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
         <defName>KobeRiddle_DecorationsCategory</defName>
         <label>Decorations Category</label>
+        <order>200</order>
+    </ModSettingsFramework.ModOptionCategoryDef>
+
+    <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
+        <defName>KobeRiddle_EnvironmentCategory</defName>
+        <label>Environment Category</label>
         <order>300</order>
     </ModSettingsFramework.ModOptionCategoryDef>
 
     <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
         <defName>KobeRiddle_FurnitureCategory</defName>
-        <label>Automation Category</label>
+        <label>Furniture Category</label>
         <order>400</order>
     </ModSettingsFramework.ModOptionCategoryDef>
 
