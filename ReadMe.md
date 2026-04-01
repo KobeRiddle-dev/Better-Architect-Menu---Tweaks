@@ -17,6 +17,7 @@ Also renames certain other categories to be more consistent and understandable.
 - Make > Production
     - Produce > Crafting
     - Process > Processing
+    - Feed > Kitchen
 - Store > Storage
 - Transport (no rename)
     - Aerial > Air
