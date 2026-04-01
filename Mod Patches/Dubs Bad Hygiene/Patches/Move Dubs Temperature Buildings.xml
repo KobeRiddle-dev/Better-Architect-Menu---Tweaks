@@ -4,8 +4,8 @@
     <Operation Class="ModSettingsFramework.PatchOperationModOption">
         <id>MoveDubsTemperatureBuildings</id>
         <defaultValue>True</defaultValue>
-        <label>Move radiators to Area. (Default: True)</label>
-        <tooltip>Moves radiators to either Heating or Temperature, depending on settings in Area Category..</tooltip>
+        <label>Move radiators to Environment. (Default: True)</label>
+        <tooltip>Moves radiators to either Heating or Temperature, depending on settings in Environment Category..</tooltip>
         <category>KobeRiddle_WaterCategory</category>
         <order>4</order>
 

@@ -6,7 +6,7 @@
         <defaultValue>True</defaultValue>
         <label>Combine Temperature Subcategories. (Default: True)</label>
         <tooltip>Combines Heating, Cooling, and Airflow into a new Temperature subcategory.</tooltip>
-        <category>KobeRiddle_AreaCategory</category>
+        <category>KobeRiddle_EnvironmentCategory</category>
         <order>000</order>
 
         <operations>
@@ -27,8 +27,8 @@
         <id>CombineFilthAndPollution</id>
         <defaultValue>True</defaultValue>
         <label>Combine Filth and Pollution. (Default: True)</label>
-        <tooltip>Moves everything from Area/Filth into Area/Pollution.</tooltip>
-        <category>KobeRiddle_AreaCategory</category>
+        <tooltip>Moves everything from Environment/Filth into Environment/Pollution.</tooltip>
+        <category>KobeRiddle_EnvironmentCategory</category>
         <order>100</order>
 
         <operations>
@@ -52,13 +52,13 @@
         <id>RemoveTerraforming</id>
         <defaultValue>True</defaultValue>
         <label>Remove Terraforming Subcategory. (Default: True)</label>
-        <tooltip>Moves everything from Area/Terraforming into Area/Other</tooltip>
-        <category>KobeRiddle_AreaCategory</category>
+        <tooltip>Moves everything from Environment/Terraforming into Environment/Other</tooltip>
+        <category>KobeRiddle_EnvironmentCategory</category>
         <order>200</order>
 
         <operations>
 
-            <!-- Move everything in Terraforming to Area/Other -->
+            <!-- Move everything in Terraforming to Environment/Other -->
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[designationCategory="Ferny_Terraforming"]/designationCategory</xpath>
                 <value>

@@ -13,8 +13,8 @@
     </ModSettingsFramework.ModOptionCategoryDef>
 
     <ModSettingsFramework.ModOptionCategoryDef ParentName="BetterArchitectMenuTweaksOption">
-        <defName>KobeRiddle_AreaCategory</defName>
-        <label>Area Category</label>
+        <defName>KobeRiddle_EnvironmentCategory</defName>
+        <label>Environment Category</label>
         <order>100</order>
     </ModSettingsFramework.ModOptionCategoryDef>
 

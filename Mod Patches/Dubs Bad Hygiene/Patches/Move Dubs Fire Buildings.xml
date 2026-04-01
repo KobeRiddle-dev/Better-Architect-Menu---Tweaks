@@ -4,8 +4,8 @@
     <Operation Class="ModSettingsFramework.PatchOperationModOption">
         <id>MoveDubsFireBuildings</id>
         <defaultValue>True</defaultValue>
-        <label>Move Fire Sprinkler to Area. (Default: True)</label>
-        <tooltip>Moves Fire Sprinkler to Area/Firefoam (and rename it to "Fire Suppression").</tooltip>
+        <label>Move Fire Sprinkler to Environment. (Default: True)</label>
+        <tooltip>Moves Fire Sprinkler to Environment/Firefoam (and rename it to "Fire Suppression").</tooltip>
         <category>KobeRiddle_WaterCategory</category>
         <order>2</order>
 
