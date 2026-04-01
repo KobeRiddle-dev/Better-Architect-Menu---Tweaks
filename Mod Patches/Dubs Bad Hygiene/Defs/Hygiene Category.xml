@@ -5,7 +5,7 @@
     <DesignationCategoryDef>
         <defName>KobeRiddle_Hygiene</defName>
         <label>Hygiene</label>
-        <description>Things that relate to hygiene.</description>
+        <description>Furniture that relate to hygiene.</description>
         <order>457</order>
         <specialDesignatorClasses>
             <li>Designator_Cancel</li>
