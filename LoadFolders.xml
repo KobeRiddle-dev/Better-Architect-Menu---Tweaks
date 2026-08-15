@@ -9,7 +9,7 @@
         <li IfModActive="Ludeon.Rimworld.Biotech">Mod Patches/Ludeon/Biotech</li>
         <li IfModActive="Ludeon.Rimworld.Anomaly">Mod Patches/Ludeon/Anomaly</li>
 
-        <li IfModActiveAll="Dubwise.DubsBadHygiene,VanillaExpanded.VChemfuelE">Mod Patches/Dubs Bad Hygiene</li>
+        <li IfModActive="Dubwise.DubsBadHygiene">Mod Patches/Dubs Bad Hygiene</li>
         <li IfModActive="VanillaExpanded.VFEArchitect">Mod Patches/VFE Architect</li>
 
     </v1.6>
