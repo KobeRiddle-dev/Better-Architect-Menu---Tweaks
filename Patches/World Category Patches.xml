@@ -35,6 +35,14 @@
                 </match>
             </li>
 
+            <!-- Remove More's link to World, so the next step doesn't make More its own parent -->
+            <li Class="PatchOperationConditional">
+                <xpath>Defs/DesignationCategoryDef[defName="Misc"]/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"][parentCategory="Ferny_World"]</xpath>
+                <match Class="PatchOperationRemove">
+                    <xpath>Defs/DesignationCategoryDef[defName="Misc"]/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"][parentCategory="Ferny_World"]</xpath>
+                </match>
+            </li>
+
             <!-- Move remaining subcategories to More -->
             <li Class="PatchOperationConditional">
                 <xpath>Defs/DesignationCategoryDef/modExtensions/li[@Class="BetterArchitect.NestedCategoryExtension"]/parentCategory[text()="Ferny_World"]</xpath>
