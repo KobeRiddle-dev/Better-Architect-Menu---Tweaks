@@ -44,10 +44,6 @@ Also renames certain other categories to be more consistent and understandable.
 - Move Childhood to Furniture (requires Biotech)
 - Remove the People Category and move any remaining subcategories and items into More
 
-### Power
-
-- Combine all Power subcategories and make Power a subcategory of Resources
-
 ### Resources/Water
 
 - Move Animal things to Animals
